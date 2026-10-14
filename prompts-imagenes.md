@@ -265,36 +265,6 @@ documento.
 
 - **Uso:** imagen de apoyo dentro del texto
 - **Proporción:** 3:4
-- **Estado:** pendiente
-- **Descripción:** Manos de varias personas alrededor de una mesa de taller con un tablero de juego de simulación de emprendimiento, fichas de colores y tarjetas, bajo una luz cálida.
-
-```json
-{
-  "type": "photorealistic photograph",
-  "subject": "Manos de varias personas alrededor de una mesa de taller con un tablero de juego de simulación de emprendimiento, fichas de colores y tarjetas, bajo una luz cálida.",
-  "setting": "Sala de taller de coaching para emprendedores, de tarde, ambiente cálido y cercano.",
-  "composition": "Plano medio o de detalle, sujeto en un tercio, fondo desenfocado.",
-  "lighting": "Luz de carrera de resistencia: mezcla de luz natural de la hora del día y focos del circuito, contraste suave y cinematográfico, tonos fríos azul marino con acentos cálidos naranja.",
-  "camera": "Cámara full frame, lente de 85 mm, f/2, poca profundidad de campo.",
-  "color_palette": [
-    "#161a2e",
-    "#8a2f63",
-    "#1d6672",
-    "#f0a050",
-    "#f7f5f0"
-  ],
-  "mood": "Concentración y oficio, atención al detalle.",
-  "style": "Fotografía editorial realista de automovilismo de resistencia, texturas reales, grano fino, sin apariencia de ilustración ni de render 3D.",
-  "aspect_ratio": "3:4",
-  "avoid": [
-    "texto legible",
-    "letras o números visibles",
-    "logos o marcas de patrocinadores",
-    "marcas de agua",
-    "bordes o marcos",
-    "manos o rostros deformes",
-    "aspecto de foto de stock posada"
-  ]
-}
-```
+- **Estado:** lista
+- **Descripción:** Jesús Díaz, de pie, acompaña a un grupo de emprendedores que juegan alrededor de un tablero de simulación de emprendimiento, con fichas, tarjetas y hojas de trabajo sobre la mesa.
 
