@@ -204,6 +204,22 @@
       if (meta.coverAspect && !poster) els.coverHero.style.aspectRatio = String(meta.coverAspect).replace(':', ' / ');
       if (meta.coverPosition && !poster) els.coverHero.style.objectPosition = meta.coverPosition;
       els.coverHero.addEventListener('error', () => els.cover.classList.remove('cover-poster'));
+      // meta.coverOverlay: el rótulo y el título se escriben encima de la imagen.
+      // Si la imagen falla, vuelven a su lugar en .cover-copy.
+      if (meta.coverOverlay === true && heroWrap !== els.coverHero) {
+        const copy = els.coverTitle.parentNode;
+        const overlay = document.createElement('div');
+        overlay.className = 'cover-overlay';
+        overlay.appendChild(els.coverKicker);
+        overlay.appendChild(els.coverTitle);
+        heroWrap.appendChild(overlay);
+        els.cover.classList.add('cover-overlay-mode');
+        els.coverHero.addEventListener('error', () => {
+          els.cover.classList.remove('cover-overlay-mode');
+          copy.insertBefore(els.coverTitle, copy.firstChild);
+          copy.insertBefore(els.coverKicker, els.coverTitle);
+        });
+      }
       els.coverHero.src = meta.coverImage;
     }
 

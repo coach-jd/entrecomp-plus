@@ -10,6 +10,8 @@
     "lang": "es",
     "coverImage": "images/portada.jpg",
     "coverAspect": "16:9",
+    "coverOverlay": true,
+    "coverPosition": "40% 50%",
     "coverImageAlt": "Un coche de resistencia con los faros encendidos sale del carril de boxes hacia la pista al anochecer, mientras el equipo lo observa desde el muro.",
     "readingTimeMinutes": 19,
     "startLabel": "Arrancar la carrera",
@@ -1252,7 +1254,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Hoy soy el arquitecto del modelo de **Colibrí LATAM**, un ecosistema de emprendimiento basado en evidencia. Su nombre viene de la fábula del colibrí que, frente a un incendio en el bosque, lleva gotas de agua en el pico. Cuando los demás animales le preguntan para qué, responde que está haciendo su parte."
+          "text": "Hoy soy CPO & I+D+i de **Colibrí LATAM**, un ecosistema de emprendimiento basado en evidencia. Su nombre viene de la fábula del colibrí que, frente a un incendio en el bosque, lleva gotas de agua en el pico. Cuando los demás animales le preguntan para qué, responde que está haciendo su parte."
         },
         {
           "type": "paragraph",
@@ -1273,11 +1275,17 @@
         },
         {
           "type": "paragraph",
-          "text": "La pregunta que lo inspiró me acompaña desde hace años: ¿cómo puede alguien que emprende con pocos recursos demostrar que avanza, aprende y crea valor? Lo construyo junto a Vladimir, como CEO, y Noryis, como CFO; yo me ocupo de la arquitectura del modelo, el producto y la investigación."
+          "text": "La pregunta que lo inspiró me acompaña desde hace años: ¿cómo puede alguien que emprende con pocos recursos demostrar que avanza, aprende y crea valor? Lo construimos en equipo: Vladimir como CEO, Noryis como CFO y Moisés como CTO. Yo me ocupo de la arquitectura del modelo, la dirección de producto y la investigación, desarrollo e innovación."
         },
         {
           "type": "paragraph",
           "text": "Colibrí es también uno de los lugares donde EntreComp Plus pasa del papel a la práctica: allí cada competencia se conecta con microacciones y evidencias concretas. Confieso que todavía estamos en etapa de pilotaje, con experiencias en la Universidad Metropolitana (UNIMET) y en el Hub de Innovación del Banco de Venezuela. Validar el modelo con rigor es nuestra próxima vuelta."
+        },
+        {
+          "type": "button",
+          "text": "Conoce Colibrí LATAM",
+          "url": "https://colibrilatam.com/",
+          "style": "ghost"
         },
         {
           "type": "heading",

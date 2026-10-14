@@ -196,6 +196,23 @@ a.btn{ display: inline-flex; align-items: center; justify-content: center; text-
   background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
 }
+/* Portada con título sobre la imagen (meta.coverOverlay: true).
+   La imagen gana altura en celular y el texto va sobre un degradado
+   oscuro fijo, así se lee igual en tema claro y oscuro. */
+.cover-overlay-mode .cover-hero{ aspect-ratio: auto !important; height: min(60vh, 640px); min-height: 380px; }
+.cover-overlay-mode .cover-hero-fade{ display: none; }
+.cover-overlay{
+  position: absolute; left: 0; right: 0; bottom: 0;
+  padding: 5rem var(--gutter) 2.2rem; text-align: center;
+  background: linear-gradient(to top, rgba(10,12,20,.9) 0%, rgba(10,12,20,.6) 55%, rgba(10,12,20,0) 100%);
+}
+.cover-overlay .cover-kicker{ color: #f0a050; }
+.cover-overlay .cover-title{ color: #ffffff; max-width: var(--max-width); margin: 0 auto; text-shadow: 0 2px 18px rgba(0,0,0,.6); }
+.cover-overlay .cover-title .accent-term{ color: #f2a6cf; }
+.cover-overlay-mode .cover-copy{ padding-top: 1.3rem; }
+.cover-overlay-mode .cover-actions{ margin-top: 1.3rem; }
+.cover-overlay-mode .cover-subtitle{ margin-top: 0; }
+
 /* Portada tipo póster (meta.coverMode: "poster"): la imagen ya trae el
    título y el subtítulo, así que se muestra entera, sin recortar, y el
    título en texto se oculta a la vista (sigue ahí para lectores de pantalla). */
