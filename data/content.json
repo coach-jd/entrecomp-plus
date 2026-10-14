@@ -1236,10 +1236,14 @@
           "type": "list",
           "style": "bullet",
           "items": [
-            "**El Viaje del Héroe Emprendedor** (2020), un libro donde cuento mi historia de emprendimiento etapa por etapa, junto a las de otros emprendedores.",
-            "**Circanvas®**, un simulador de emprendimiento para sesiones de coaching grupal, que nació de las ideas desordenadas que compartí en una cabaña con Saúl Escalona y Carlos Luna.",
-            "**EntreComp Plus**, la ampliación del marco europeo EntreComp con el área Comunicación Efectiva que acabas de recorrer."
+            "**Circanvas® (2016).** Todo empezó con ideas todavía desordenadas que compartí en una cabaña con Saúl Escalona y Carlos Luna. De ahí nació un simulador de emprendimiento para sesiones de coaching grupal, pensado para que las personas desarrollen las competencias que necesitan para avanzar con sus proyectos. En cada sesión, los participantes recorren el Viaje del Héroe Emprendedor: una travesía donde las decisiones se toman, se observan y se conversan antes de que cuesten caro en la realidad.",
+            "**El Viaje del Héroe Emprendedor (2020).** Acompañar tantas sesiones me puso frente a muchas historias, y entendí que merecían ser contadas. Escribí este libro para poner en el centro a los emprendedores y la travesía que transitan. En él cuento mi propia historia de emprendimiento, junto a la de otros emprendedores, entre ellos Andrés Moreno, CEO de Open English. Trayectorias distintas que muestran lo mismo: emprender no se define en un momento brillante, sino en una secuencia de decisiones, renuncias y aprendizajes.",
+            "**EntreComp Plus (2023).** Con el tiempo necesité un marco más preciso. Amplié EntreComp, el marco europeo de competencias emprendedoras, con un área que en nuestro contexto resulta indispensable: la Comunicación Efectiva, la misma que acabas de recorrer. Comunicar bien no reemplaza la evidencia, pero sin ella muchas veces la evidencia no llega a ser leída."
           ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Primero acompañé, después escuché, luego escribí y finalmente estructuré. Cada etapa respondió a lo que la anterior dejó abierto."
         },
         {
           "type": "image",
