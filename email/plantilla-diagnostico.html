@@ -1,0 +1,148 @@
+<!--
+  EntreComp Plus: le apuesto al piloto, no al coche
+  Plantilla de EmailJS para el resultado del diagnóstico «¿Cómo está hoy tu piloto?»
+
+  CÓMO USARLA
+  1. EmailJS → Email Templates → nueva plantilla → pestaña "Content" →
+     botón de editar código (<>) → pega TODO este archivo.
+  2. Campos de la plantilla:
+       Subject:    Tu resultado de {{diagnostic_title}}
+       To Email:   {{to_email}}
+       From Name:  Coach Jesús Díaz
+       Reply To:   (tu correo)
+       Bcc:        (tu correo, para recibir cada diagnóstico como lead)
+  3. Copia el Template ID, el Service ID y la Public Key a
+     data/content.json → meta.leads.emailjs.
+  4. En la seguridad de la cuenta, limita los dominios a coach-jd.github.io.
+
+  Muestra DOS prioridades (priorities.count = 2). Las imágenes se cargan
+  desde https://coach-jd.github.io/entrecomp-plus/ cuando ya están publicadas.
+-->
+<div style="margin:0;padding:0;background:#eceae4;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eceae4;">
+  <tr>
+    <td align="center" style="padding:24px 12px;">
+      <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:12px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#161a2e;">
+
+        <!-- IMAGEN DE CABECERA: meta.coverImage, o block.email.heroImage -->
+        <tr>
+          <td style="padding:0;">
+            <img src="{{image_hero}}" width="600" alt="" style="display:block;width:100%;max-width:600px;height:auto;border:0;" />
+          </td>
+        </tr>
+
+        <!-- TÍTULO -->
+        <tr>
+          <td style="padding:36px 40px 0;">
+            <p style="margin:0 0 10px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a2f63;">Revisión en boxes</p>
+            <h1 style="margin:0 0 14px;font-size:28px;line-height:1.2;font-weight:700;color:#161a2e;">Resultado de tu {{diagnostic_title}}</h1>
+            <p style="margin:0;font-size:14px;line-height:1.5;color:#4f5468;">A partir de tus respuestas en el libro <strong style="color:#161a2e;">«{{book_title}}»</strong></p>
+          </td>
+        </tr>
+
+        <!-- SALUDO -->
+        <tr>
+          <td style="padding:28px 40px 0;">
+            <h2 style="margin:0 0 14px;font-size:20px;line-height:1.3;color:#161a2e;">Hola {{to_name}},</h2>
+            <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:#161a2e;">Gracias por detenerte a revisar al piloto. En una carrera de resistencia, esa parada vale más de lo que parece.</p>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#161a2e;">Lo que sigue no es una calificación. Es una lectura de cómo estás hoy, para que elijas qué entrenar primero.</p>
+          </td>
+        </tr>
+
+        <!-- RESUMEN: perfil general -->
+        <tr>
+          <td style="padding:28px 40px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f0;border-left:4px solid #8a2f63;">
+              <tr>
+                <td style="padding:20px 22px;">
+                  <p style="margin:0 0 8px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#4f5468;">Tu perfil de piloto</p>
+                  <p style="margin:0 0 12px;font-size:20px;line-height:1.3;font-weight:700;color:#161a2e;">{{profile_title}}</p>
+                  <p style="margin:0 0 8px;font-size:15px;line-height:1.55;color:#161a2e;"><strong style="color:#161a2e;">Tu fortaleza:</strong> {{profile_strength}}</p>
+                  <p style="margin:0 0 8px;font-size:15px;line-height:1.55;color:#161a2e;"><strong style="color:#161a2e;">El riesgo a vigilar:</strong> {{profile_risk}}</p>
+                  <p style="margin:0;font-size:15px;line-height:1.55;color:#161a2e;"><strong style="color:#161a2e;">Tu siguiente paso:</strong> {{profile_next}}</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- INTRODUCCIÓN A LAS PRIORIDADES -->
+        <tr>
+          <td style="padding:28px 40px 0;">
+            <h2 style="margin:0 0 10px;font-size:17px;line-height:1.3;color:#161a2e;">Por dónde empezar</h2>
+            <p style="margin:0;font-size:15px;line-height:1.6;color:#161a2e;">Estas son las dos áreas que hoy piden más atención según tus respuestas. Las otras también importan, pero ningún equipo cambia todo el coche en una sola parada.</p>
+          </td>
+        </tr>
+
+        <!-- PRIORIDAD 01 -->
+        <tr>
+          <td style="padding:26px 40px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #e3dfd6;">
+              <tr><td style="padding:22px 0 0;">
+                <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a2f63;">Prioridad 01</p>
+                <h3 style="margin:0 0 12px;font-size:21px;line-height:1.3;color:#8a2f63;">{{priority_1_label}}</h3>
+                <p style="margin:0 0 10px;font-size:15px;line-height:1.5;color:#161a2e;"><strong style="color:#161a2e;">Puntaje:</strong> {{priority_1_score}} de {{priority_1_max}}</p>
+                <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:#161a2e;">{{priority_1_text}}</p>
+                <p style="margin:0 0 4px;font-size:15px;line-height:1.5;color:#161a2e;"><strong style="color:#161a2e;">Tu acción para esta semana</strong></p>
+                <p style="margin:0;font-size:15px;line-height:1.6;color:#161a2e;">{{priority_1_advice}}</p>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- PRIORIDAD 02 -->
+        <tr>
+          <td style="padding:26px 40px 0;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #e3dfd6;">
+              <tr><td style="padding:22px 0 0;">
+                <p style="margin:0 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8a2f63;">Prioridad 02</p>
+                <h3 style="margin:0 0 12px;font-size:21px;line-height:1.3;color:#8a2f63;">{{priority_2_label}}</h3>
+                <p style="margin:0 0 10px;font-size:15px;line-height:1.5;color:#161a2e;"><strong style="color:#161a2e;">Puntaje:</strong> {{priority_2_score}} de {{priority_2_max}}</p>
+                <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:#161a2e;">{{priority_2_text}}</p>
+                <p style="margin:0 0 4px;font-size:15px;line-height:1.5;color:#161a2e;"><strong style="color:#161a2e;">Tu acción para esta semana</strong></p>
+                <p style="margin:0;font-size:15px;line-height:1.6;color:#161a2e;">{{priority_2_advice}}</p>
+              </td></tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- REFLEXIÓN Y LLAMADO A LA ACCIÓN -->
+        <tr>
+          <td style="padding:32px 40px 0;">
+            <h2 style="margin:0 0 14px;font-size:20px;line-height:1.3;color:#161a2e;">Una reflexión para la próxima tanda</h2>
+            <p style="margin:0 0 12px;font-size:15px;line-height:1.6;color:#161a2e;">Elige una sola competencia, una acción, una evidencia y una fecha de revisión. Cuando llegue esa fecha, vuelve a responder el diagnóstico y compara. Te lo digo por experiencia: las ideas cambian, pero el piloto que aprende sigue en carrera.</p>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding:22px 40px 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td align="center" bgcolor="#8a2f63" style="border-radius:6px;">
+                  <a href="{{cta_url}}" target="_blank" style="display:inline-block;padding:14px 30px;font-size:15px;font-weight:700;color:#ffffff;text-decoration:none;">{{cta_text}}</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- FIRMA -->
+        <tr>
+          <td style="padding:34px 40px 0;">
+            <p style="margin:0 0 4px;font-size:15px;line-height:1.5;color:#161a2e;">¡Nos vemos en la pista!</p>
+            <p style="margin:0;font-size:16px;line-height:1.4;font-weight:700;color:#161a2e;">Coach Jesús Díaz</p>
+            <p style="margin:0;font-size:14px;line-height:1.5;color:#4f5468;">Autor de EntreComp Plus</p>
+          </td>
+        </tr>
+
+        <!-- PIE -->
+        <tr>
+          <td style="padding:28px 40px 36px;">
+            <p style="margin:0;padding-top:18px;border-top:1px solid #e3dfd6;font-size:12px;line-height:1.5;color:#4f5468;">Este informe se generó automáticamente a partir de tus respuestas. Es una autoevaluación formativa: no es un instrumento validado, no forma parte de EntreComp y no reemplaza un acompañamiento profesional. EntreComp Plus es una propuesta independiente que no implica respaldo de la Comisión Europea.</p>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
+</div>

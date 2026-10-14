@@ -1,0 +1,1217 @@
+{
+  "meta": {
+    "title": "EntreComp Plus: **le apuesto al piloto, no al coche**",
+    "shortTitle": "EntreComp Plus",
+    "htmlTitle": "EntreComp Plus: le apuesto al piloto, no al coche",
+    "coverKicker": "Un Libro Web del Coach Jesús Díaz",
+    "subtitle": "Las conversaciones que ponen tus ideas en movimiento. Una guía para desarrollar tus competencias emprendedoras, basada en EntreComp, el marco europeo.",
+    "author": "Coach Jesús Díaz",
+    "url": "https://coach-jd.github.io/entrecomp-plus/",
+    "lang": "es",
+    "coverImage": "images/portada.jpg",
+    "coverImageAlt": "Un coche de resistencia con los faros encendidos sale del carril de boxes hacia la pista al anochecer, mientras el equipo lo observa desde el muro.",
+    "readingTimeMinutes": 19,
+    "startLabel": "Arrancar la carrera",
+    "ui": {
+      "end": "Volver a la parrilla de salida",
+      "diagAdvice": "Tu acción para esta semana"
+    }
+  },
+  "chapters": [
+    {
+      "id": "prologo",
+      "kicker": "Prólogo",
+      "title": "Le aposté al coche",
+      "hero": {
+        "src": "images/prologo-hero.jpg",
+        "alt": "Un coche de resistencia detenido en su box vacío, de noche, iluminado por la luz del garaje mientras la pista sigue encendida al fondo.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "¿Quién quiere escuchar la historia de alguien que llegó a la final y aun así se sintió perdedor? Te cuento la mía, porque de ella nace este libro."
+        },
+        {
+          "type": "paragraph",
+          "text": "En dos ocasiones, en 2008 y en 2010, presenté en el Concurso IDEAS mi iniciativa de crear una productora audiovisual de contenidos interactivos. La llamé **Polimetrajes**. Las dos veces quedé entre los doce (12) finalistas, entre más de seiscientos (600) proyectos en competencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Y las dos veces me fui a casa sin el premio. Confieso que durante años evité contar esa historia. Para mí, no ganar era ¡un estruendoso fracaso!... estaba viendo el vaso medio vacío."
+        },
+        {
+          "type": "heading",
+          "text": "Toda mi atención estaba en el coche"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hoy entiendo dónde estaba mi error de lectura. Yo había puesto toda mi atención en la idea: el formato, la tecnología, lo novedoso de contar historias interactivas. Pulía el coche una y otra vez, convencido de que un buen motor bastaba para cruzar la meta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Casi no miraba al piloto. ¿Qué tan bien explicaba lo que había observado en el mercado? ¿Qué pedía, a quién y para cuándo? ¿Cómo recibía las críticas del jurado? Esas preguntas no estaban en mi tablero."
+        },
+        {
+          "type": "image",
+          "id": "prologo-1",
+          "src": "images/prologo-1.jpg",
+          "alt": "Sobre un escritorio de madera, una libreta abierta con bocetos de guion gráfico a lápiz, una cámara de video antigua y una taza de café, bajo la luz de una lámpara.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Lo que cambió en el camino"
+        },
+        {
+          "type": "paragraph",
+          "text": "La pregunta que me dejó 2010 terminó llevándome al coaching. En la última jornada de mi certificación compartí cabaña con dos colegas, Saúl Escalona y Carlos Luna. Ellos fueron los primeros en escuchar las ideas desordenadas de lo que luego sería mi simulador de emprendimiento."
+        },
+        {
+          "type": "paragraph",
+          "text": "En el coaching ontológico descubrí algo que nadie me había dicho en los concursos: **una idea avanza a la velocidad de las conversaciones que la sostienen**. Lo que yo llamaba mala suerte eran, muchas veces, conversaciones que no supe tener."
+        },
+        {
+          "type": "quote",
+          "text": "En el capital de riesgo se repite una frase: «le apuesto al jinete, no al caballo». Yo la llevo a la pista: le apuesto al piloto, no al coche."
+        },
+        {
+          "type": "heading",
+          "text": "Por qué Le Mans"
+        },
+        {
+          "type": "paragraph",
+          "text": "Este libro usa como metáfora las 24 Horas de Le Mans, la carrera de resistencia que se corre cada año en el Circuito de La Sarthe, en Francia. Allí no gana el coche más rápido en una vuelta. Gana el equipo que recorre más distancia en veinticuatro horas."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los pilotos se relevan al volante, la noche cae sobre la pista y un equipo en los pits decide en segundos. Emprender se parece mucho más a eso que a un sprint. Por eso te propongo recorrer el Marco EntreComp Plus como quien prepara una carrera de resistencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tú tendrás siempre las manos sobre el volante; yo solo seré tu guía. ¿Arrancamos?"
+        }
+      ],
+      "numbered": false
+    },
+    {
+      "id": "el-piloto",
+      "kicker": "Parte I · El piloto y el mapa",
+      "title": "Emprender también te transforma a ti",
+      "hero": {
+        "src": "images/el-piloto-hero.jpg",
+        "alt": "Una piloto de resistencia, de perfil, se ajusta los guantes sentada en el borde del muro de boxes antes de su turno, con el casco a su lado.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Antes de hablar de modelos, te propongo mirar al piloto. Al terminar este capítulo sabrás qué es una competencia y por qué puedes entrenarla."
+        },
+        {
+          "type": "heading",
+          "text": "Emprender es crear valor para otros"
+        },
+        {
+          "type": "paragraph",
+          "text": "Durante mucho tiempo pensé que emprender era sinónimo de abrir una empresa. El marco europeo EntreComp propone una mirada más amplia: emprendes cuando actúas sobre oportunidades e ideas y las transformas en **valor para otras personas**."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ese valor puede ser económico, social o cultural. Emprende quien funda una startup, sí. También quien organiza una cooperativa en su barrio, quien propone un proyecto nuevo dentro de su empresa o quien abre un taller para su comunidad."
+        },
+        {
+          "type": "heading",
+          "text": "Competencia: estar vestido para la ocasión"
+        },
+        {
+          "type": "paragraph",
+          "text": "En mis talleres uso una imagen sencilla. Una competencia es como estar vestido para la ocasión: no basta con tener la ropa en el armario, hay que saber cuándo ponérsela y llevarla con naturalidad."
+        },
+        {
+          "type": "paragraph",
+          "text": "Dicho de otra forma, una competencia combina lo que sabes, lo que sabes hacer y la actitud con la que lo haces. Y se nota en la pista, no en el garaje."
+        },
+        {
+          "type": "pillars",
+          "items": [
+            {
+              "title": "Conocer",
+              "text": "Entiendes el concepto y puedes explicarlo con tus palabras."
+            },
+            {
+              "title": "Practicar",
+              "text": "Lo aplicas en situaciones reales, todavía con ayuda o con tropiezos."
+            },
+            {
+              "title": "Demostrar",
+              "text": "Lo haces por tu cuenta y otras personas pueden observar el resultado."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "id": "el-piloto-1",
+          "src": "images/el-piloto-1.jpg",
+          "alt": "Primer plano de las manos de un piloto con guantes sobre el volante de un coche de carreras, con el habitáculo en penumbra.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "El piloto se entrena; el coche se cambia"
+        },
+        {
+          "type": "paragraph",
+          "text": "En Le Mans cada coche lleva tres pilotos que se turnan durante el día y la noche. Ningún equipo inscribe a alguien que solo sabe manejar de día y con la pista seca."
+        },
+        {
+          "type": "paragraph",
+          "text": "Con las ideas pasa algo parecido. Tu primer coche, tu primera idea, probablemente cambiará: ajustarás el precio, cambiarás de cliente, quizá de producto. Lo que viaja contigo de una idea a la siguiente son tus competencias."
+        },
+        {
+          "type": "paragraph",
+          "text": "No puedo prometerte que entrenarlas garantice el éxito; nadie honesto puede prometerlo. Lo que sí he visto, en mí y en los emprendedores que acompaño, es que quien las entrena aprende más rápido de cada vuelta."
+        },
+        {
+          "type": "reflection",
+          "id": "reflexion-piloto",
+          "question": "Piensa en tu proyecto actual. ¿Has puesto más energía en mejorar el coche (tu idea) o en entrenar al piloto (tú)? ¿Qué te dice eso?",
+          "placeholder": "Escribe tu respuesta aquí..."
+        }
+      ]
+    },
+    {
+      "id": "mapa-europeo",
+      "kicker": "Parte I · El piloto y el mapa",
+      "title": "El mapa que recibimos de Europa",
+      "hero": {
+        "src": "images/mapa-europeo-hero.jpg",
+        "alt": "Vista aérea al amanecer de un circuito de resistencia que serpentea entre bosques y campos, con la recta principal todavía vacía.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Todo buen equipo estudia el circuito antes de salir. Para el emprendimiento, ese mapa ya existe y lo publicó la Unión Europea."
+        },
+        {
+          "type": "heading",
+          "text": "Quién dibujó el mapa"
+        },
+        {
+          "type": "paragraph",
+          "text": "EntreComp, el Marco de Competencias Emprendedoras, fue publicado en 2016 por el Centro Común de Investigación (JRC, por sus siglas en inglés) de la Comisión Europea. Sus autores son Margherita Bacigalupo, Panagiotis Kampylis, Yves Punie y Lieve Van den Brande."
+        },
+        {
+          "type": "paragraph",
+          "text": "Su propósito es ofrecer un **lenguaje común** sobre lo que significa ser emprendedor, útil en escuelas, universidades, empresas y políticas públicas. No es un manual para montar empresas. Es un mapa de capacidades para cualquier persona que quiera crear valor."
+        },
+        {
+          "type": "heading",
+          "text": "Tres áreas, quince competencias"
+        },
+        {
+          "type": "paragraph",
+          "text": "El marco organiza el emprendimiento en tres áreas, cada una con cinco competencias:"
+        },
+        {
+          "type": "pillars",
+          "items": [
+            {
+              "title": "Ideas y Oportunidades",
+              "text": "Detectar oportunidades, creatividad, visión, valorar ideas y pensamiento ético y sostenible."
+            },
+            {
+              "title": "Recursos",
+              "text": "Autoconocimiento y autoeficacia, motivación y perseverancia, movilizar recursos, alfabetización financiera y económica, y movilizar a otros."
+            },
+            {
+              "title": "Hacia la Acción",
+              "text": "Tomar la iniciativa, planificación y gestión, afrontar la incertidumbre, la ambigüedad y el riesgo, trabajar con otros y aprender de la experiencia."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "id": "mapa-europeo-1",
+          "src": "images/mapa-europeo-1.jpg",
+          "alt": "Un ingeniero de pista, de espaldas, estudia un plano impreso del circuito extendido sobre la mesa del box, con marcas a lápiz que no se alcanzan a leer.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Un mapa más detallado de lo que parece"
+        },
+        {
+          "type": "paragraph",
+          "text": "Detrás de esas quince competencias hay un modelo de progresión de ocho niveles, desde los fundamentos hasta la experticia, y 442 resultados de aprendizaje. No los reproduzco aquí: te invito a consultarlos en la publicación original, que cito al final del libro."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hay un detalle que me importa subrayar. EntreComp no establece una jerarquía entre sus competencias: las quince tienen el mismo peso, y cada persona o programa decide por dónde empezar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esa libertad me permitió tomar una decisión pedagógica que te explico en el próximo capítulo. ¿Y si el punto de partida fueran las conversaciones?"
+        },
+        {
+          "type": "quote",
+          "text": "Un mapa no maneja por ti. Te dice dónde estás y qué tramos vienen."
+        }
+      ]
+    },
+    {
+      "id": "los-pits",
+      "kicker": "Parte I · El piloto y el mapa",
+      "title": "Lo que se decide en los pits",
+      "hero": {
+        "src": "images/los-pits-hero.jpg",
+        "alt": "Un coche de resistencia entra de noche al carril de boxes mientras el equipo, con cascos y auriculares, lo espera en posición bajo las luces.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "En este capítulo te presento mi aporte al mapa europeo: una cuarta área, **Comunicación Efectiva**, y la razón por la que la propongo como puerta de entrada."
+        },
+        {
+          "type": "heading",
+          "text": "Las carreras también se ganan por radio"
+        },
+        {
+          "type": "paragraph",
+          "text": "Observa una parada en boxes en Le Mans. El coche entra, los mecánicos cambian neumáticos, cargan combustible y relevan al piloto. Nada de eso funciona sin una conversación previa: qué neumático, en qué vuelta, quién toma el volante."
+        },
+        {
+          "type": "paragraph",
+          "text": "Durante horas, el piloto habla con su ingeniero por radio. Describe lo que siente en el coche, pide ajustes, recibe instrucciones, acepta o discute una estrategia. Una mala comunicación cuesta más tiempo que un neumático lento."
+        },
+        {
+          "type": "heading",
+          "text": "La comunicación ya estaba en el mapa"
+        },
+        {
+          "type": "paragraph",
+          "text": "Quiero ser preciso con esto. EntreComp no ignora la comunicación: está presente en competencias como movilizar a otros y trabajar con otros. Lo que yo echaba de menos era verla con nombre propio, desglosada en prácticas que se pueden observar y entrenar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mi propuesta organiza esas prácticas en un área explícita. Se apoya en la ontología del lenguaje, en particular en la teoría de los actos lingüísticos que Rafael Echeverría desarrolló en Ontología del lenguaje (1994), a partir del trabajo de John L. Austin, John Searle y Fernando Flores."
+        },
+        {
+          "type": "image",
+          "id": "los-pits-1",
+          "src": "images/los-pits-1.jpg",
+          "alt": "Detalle de los auriculares y el micrófono de radio de un ingeniero de pista apoyados sobre el muro de boxes, con la pista desenfocada al fondo.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Cinco conversaciones que puedes entrenar"
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "**Describir el mundo y sus fenómenos**: usar afirmaciones verificables para construir una base común.",
+            "**Generar un mundo nuevo**: hacer declaraciones que abren posibilidades y fijan un rumbo.",
+            "**Coordinar acciones con otros**: pedir, ofrecer y prometer con claridad.",
+            "**Dar y recibir retroalimentación**: emitir juicios fundados y escuchar los ajenos.",
+            "**Diseñar conversaciones**: preparar y conducir los diálogos que tu proyecto necesita."
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Una decisión pedagógica, no una jerarquía"
+        },
+        {
+          "type": "paragraph",
+          "text": "En EntreComp Plus coloco esta área en primer lugar. No porque el marco europeo lo establezca, sino porque en mi experiencia acompañando emprendedores es la puerta de entrada más útil: casi todas las demás competencias se juegan en una conversación."
+        },
+        {
+          "type": "paragraph",
+          "text": "Detectar una oportunidad empieza escuchando a un cliente. Movilizar recursos pasa por una petición. Trabajar con otros depende de promesas que se cumplen. Puedes no estar de acuerdo con este orden, y está bien: el mapa te deja empezar por donde lo necesites."
+        },
+        {
+          "type": "quote",
+          "text": "Una idea abre una posibilidad. Las conversaciones la convierten en compromisos, colaboración y acción."
+        },
+        {
+          "type": "quiz",
+          "id": "quiz-pits",
+          "question": "¿Cuál de estas cinco conversaciones te cuesta más hoy?",
+          "options": [
+            "Describir lo que pasa sin mezclarlo con mi opinión",
+            "Declarar un rumbo y sostenerlo",
+            "Pedir, ofrecer y cerrar acuerdos",
+            "Dar o recibir retroalimentación",
+            "Preparar las conversaciones importantes"
+          ],
+          "feedback": "Guarda esa respuesta. En los próximos cinco capítulos recorreremos cada conversación, y al final podrás contrastarla con tu diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "afirmaciones",
+      "kicker": "Parte II · Las cinco conversaciones",
+      "title": "Describir el mundo antes de interpretarlo",
+      "hero": {
+        "src": "images/afirmaciones-hero.jpg",
+        "alt": "Un piloto, con el casco puesto y la visera levantada, habla por radio desde el habitáculo mientras recorre la pista al atardecer.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "La primera conversación es la más silenciosa: describir lo que ocurre sin mezclarlo con lo que opinas de lo que ocurre."
+        },
+        {
+          "type": "heading",
+          "text": "«El coche está horrible»"
+        },
+        {
+          "type": "paragraph",
+          "text": "Imagina dos pilotos que hablan por radio con su ingeniero. El primero dice: «El coche está horrible». El segundo dice: «En la frenada de Mulsanne se me va la parte trasera, y llevo tres vueltas perdiendo cuatro décimas»."
+        },
+        {
+          "type": "paragraph",
+          "text": "¿A cuál de los dos puede ayudar su ingeniero? El segundo hizo **afirmaciones**: dijo cosas que otra persona puede verificar. El primero emitió un juicio, legítimo, pero imposible de reparar con una llave."
+        },
+        {
+          "type": "heading",
+          "text": "Hechos, interpretaciones e hipótesis"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando emprendes, mezclas estas tres cosas todo el tiempo sin darte cuenta. Separarlas cambia la calidad de tus decisiones."
+        },
+        {
+          "type": "pillars",
+          "items": [
+            {
+              "title": "Hecho",
+              "text": "«Doce de veinte entrevistados dijeron que hoy pagan por este servicio.» Se puede comprobar."
+            },
+            {
+              "title": "Interpretación",
+              "text": "«Los clientes están desesperados por una solución.» Es tu lectura de los hechos."
+            },
+            {
+              "title": "Hipótesis",
+              "text": "«Si bajo el precio, la mitad comprará.» Es una apuesta que todavía debes poner a prueba."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "id": "afirmaciones-1",
+          "src": "images/afirmaciones-1.jpg",
+          "alt": "Manos que toman notas en una libreta junto a una pantalla de tiempos por vuelta completamente desenfocada, en el muro de boxes.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Dónde se juega en tu proyecto"
+        },
+        {
+          "type": "paragraph",
+          "text": "En una entrevista con clientes, anota lo que la persona hizo y dijo, con sus palabras, antes de escribir lo que crees que quiso decir. En una reunión de equipo, pregunta «¿qué observamos?» antes de preguntar «¿qué pensamos?»."
+        },
+        {
+          "type": "paragraph",
+          "text": "Confieso que a mí me sigue costando. Cuando una idea me entusiasma, mis interpretaciones se visten de hechos con mucha facilidad... y es justo entonces cuando más necesito a alguien que me pregunte cómo lo sé."
+        },
+        {
+          "type": "quiz",
+          "id": "quiz-afirmaciones",
+          "question": "«Nuestros seguidores en Instagram aman el producto.» ¿Qué es esta frase?",
+          "options": [
+            "Un hecho verificable",
+            "Una interpretación",
+            "Una hipótesis"
+          ],
+          "feedback": "Es una interpretación. Un hecho sería, por ejemplo: «Treinta y dos personas comentaron la publicación y nueve preguntaron el precio». Con ese dato sí puedes conversar y decidir."
+        }
+      ]
+    },
+    {
+      "id": "declaraciones",
+      "kicker": "Parte II · Las cinco conversaciones",
+      "title": "Declarar un rumbo y hacerte responsable",
+      "hero": {
+        "src": "images/declaraciones-hero.jpg",
+        "alt": "La bandera tricolor ondea en lo alto sobre la parrilla de salida mientras los coches esperan alineados al caer la tarde.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Hay frases que no describen el mundo: lo cambian. En este capítulo aprenderás a distinguir declarar de desear."
+        },
+        {
+          "type": "heading",
+          "text": "La bandera que cambia todo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando se agita la bandera de salida, nadie está describiendo nada. Se está declarando que la carrera comenzó, y desde ese instante todo es distinto para los coches en la pista."
+        },
+        {
+          "type": "paragraph",
+          "text": "Eso hace una **declaración**: crea una realidad nueva a partir de la autoridad de quien la pronuncia. «Fundamos esta empresa». «A partir de hoy solo trabajamos con pago por adelantado». «No sé». «Gracias». Todas abren o cierran posibilidades."
+        },
+        {
+          "type": "heading",
+          "text": "Declarar, desear y prometer no son lo mismo"
+        },
+        {
+          "type": "pillars",
+          "items": [
+            {
+              "title": "Desear",
+              "text": "«Ojalá algún día exporte.» Expresa un anhelo y no compromete a nadie."
+            },
+            {
+              "title": "Declarar",
+              "text": "«Este año exportamos a un primer país.» Fija un rumbo dentro de tu ámbito de autoridad."
+            },
+            {
+              "title": "Prometer",
+              "text": "«Te envío la cotización el viernes.» Compromete una acción concreta con otra persona."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "id": "declaraciones-1",
+          "src": "images/declaraciones-1.jpg",
+          "alt": "Primer plano de la mano enguantada de un comisario de pista que sostiene una bandera enrollada, a punto de desplegarla.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Declarar exige autoridad y coherencia"
+        },
+        {
+          "type": "paragraph",
+          "text": "Una declaración vale lo que vale la autoridad de quien la hace. Si declaras el rumbo de tu emprendimiento, estás en tu terreno. Si declaras cómo debe sentirse tu cliente, no."
+        },
+        {
+          "type": "paragraph",
+          "text": "Y una declaración sin acciones coherentes se desgasta rápido. Tu equipo escucha lo que declaras, pero mira lo que haces la semana siguiente."
+        },
+        {
+          "type": "paragraph",
+          "text": "Te comparto una declaración que me costó años: «No sé». Durante mucho tiempo creí que un coach debía tener todas las respuestas. Decir «no sé, vamos a averiguarlo» me ha abierto más puertas que cualquier respuesta improvisada."
+        },
+        {
+          "type": "quote",
+          "text": "Declarar es la manera más corta de convertir una intención en un punto de partida."
+        },
+        {
+          "type": "reflection",
+          "id": "reflexion-declaracion",
+          "question": "Escribe una declaración que hoy necesita tu proyecto. Revisa que esté dentro de tu ámbito de autoridad y anota la primera acción coherente con ella.",
+          "placeholder": "Escribe tu respuesta aquí..."
+        }
+      ]
+    },
+    {
+      "id": "coordinar-acciones",
+      "kicker": "Parte II · Las cinco conversaciones",
+      "title": "Una buena intención todavía necesita un acuerdo",
+      "hero": {
+        "src": "images/coordinar-acciones-hero.jpg",
+        "alt": "Un equipo de mecánicos coordinados rodea un coche detenido en el carril de boxes durante una parada nocturna, con movimiento congelado por el flash.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "La mayoría de los tropiezos de un equipo no vienen de la mala fe, sino de acuerdos que nunca terminaron de hacerse. Aquí verás cómo pedir, ofrecer y prometer con claridad."
+        },
+        {
+          "type": "heading",
+          "text": "Segundos que se acuerdan antes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Una parada en boxes dura segundos porque casi todo se acordó antes: quién cambia qué rueda, en qué orden, con qué señal sale el coche. Nadie improvisa la coordinación con el coche detenido."
+        },
+        {
+          "type": "paragraph",
+          "text": "En tu emprendimiento, la coordinación ocurre a través de **peticiones, ofertas y promesas**. Una petición pide una acción futura; una oferta la propone; y cuando la otra persona acepta, nace una promesa."
+        },
+        {
+          "type": "heading",
+          "text": "Lo que necesita una petición efectiva"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Alguien que pide y alguien que recibe la petición, con nombre.",
+            "Una acción concreta, que se pueda observar cuando esté hecha.",
+            "Un plazo. «Cuando puedas» no es un plazo.",
+            "Condiciones de satisfacción: cómo sabremos que quedó bien.",
+            "Un contexto compartido: por qué importa."
+          ]
+        },
+        {
+          "type": "image",
+          "id": "coordinar-acciones-1",
+          "src": "images/coordinar-acciones-1.jpg",
+          "alt": "Detalle de un mecánico arrodillado que sujeta la pistola neumática sobre la rueda, esperando la señal de su compañero.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "La escena que se repite"
+        },
+        {
+          "type": "paragraph",
+          "text": "«Te ayudo con las redes», le dice un amigo a una emprendedora. Ella sonríe, agradece y espera. Pasan tres semanas. Ninguno de los dos mintió, pero tampoco acordaron nada: qué publicaciones, cuántas, para cuándo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Es un caso ilustrativo, aunque seguro reconoces la escena. La versión con acuerdo suena así: «¿Puedes diseñar tres publicaciones para el lanzamiento y enviármelas el jueves al mediodía, con las fotos que te paso hoy?»."
+        },
+        {
+          "type": "heading",
+          "text": "Cumplir, y también renegociar a tiempo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Las promesas se cumplen, pero también se pueden renegociar. Avisar el martes que no llegarás el jueves cuida la confianza. Desaparecer el jueves la rompe."
+        },
+        {
+          "type": "paragraph",
+          "text": "En mi criterio, aquí se gana o se pierde la reputación de un emprendedor: no en el pitch, sino en la cadena de pequeñas promesas que cumple o deja caer."
+        },
+        {
+          "type": "reflection",
+          "id": "reflexion-peticion",
+          "question": "Elige una petición pendiente en tu proyecto. Reescríbela con una acción concreta, un plazo y sus condiciones de satisfacción.",
+          "placeholder": "Escribe tu respuesta aquí..."
+        }
+      ]
+    },
+    {
+      "id": "retroalimentacion",
+      "kicker": "Parte II · Las cinco conversaciones",
+      "title": "La conversación que cuesta escuchar",
+      "hero": {
+        "src": "images/retroalimentacion-hero.jpg",
+        "alt": "Una piloto y su ingeniero revisan juntos los datos de la tanda en una computadora portátil dentro del box, con la pantalla fuera de foco.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Los juicios no son verdaderos ni falsos: son opiniones que pueden estar bien o mal fundadas. Aprender a darlos y recibirlos acelera tu aprendizaje."
+        },
+        {
+          "type": "heading",
+          "text": "Los tiempos no mienten; las lecturas, a veces sí"
+        },
+        {
+          "type": "paragraph",
+          "text": "Al final de cada tanda, el ingeniero le muestra al piloto sus tiempos por vuelta. Esos números son afirmaciones. Lo que viene después, «estás frenando tarde», «el coche no te deja girar», son **juicios**. Y de esa conversación depende la siguiente tanda."
+        },
+        {
+          "type": "heading",
+          "text": "Cuándo un juicio está bien fundado"
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "Se emite con un propósito: para qué lo digo.",
+            "Pertenece a un dominio concreto: en qué área de la acción.",
+            "Usa estándares compartidos: con qué criterio lo mido.",
+            "Se apoya en hechos: qué observé que lo sostiene.",
+            "Considera los hechos que podrían contradecirlo."
+          ]
+        },
+        {
+          "type": "image",
+          "id": "retroalimentacion-1",
+          "src": "images/retroalimentacion-1.jpg",
+          "alt": "Un casco de carreras apoyado sobre una mesa del box junto a unas hojas de tiempos boca abajo, bajo una luz cálida.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Recibir es la parte difícil"
+        },
+        {
+          "type": "paragraph",
+          "text": "Te confieso que mi primera reacción ante una crítica sigue siendo defenderme. Me pasó con los jurados del Concurso IDEAS: escuchaba sus observaciones como un veredicto sobre mí y no como información sobre mi proyecto."
+        },
+        {
+          "type": "paragraph",
+          "text": "Hoy intento hacerme tres preguntas antes de responder. ¿Para qué me lo dice? ¿Qué observó? ¿Con qué criterio lo mide? Muchas veces el juicio sigue sin gustarme, pero ya puedo aprender algo de él."
+        },
+        {
+          "type": "heading",
+          "text": "Dar retroalimentación sin dañar el motor"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando te toque darla, empieza por el hecho, sigue con tu juicio y termina con una petición: «En las dos últimas reuniones llegaste quince minutos tarde. Siento que eso retrasa al equipo. ¿Podemos acordar que, si te vas a retrasar, avises antes?»."
+        },
+        {
+          "type": "quiz",
+          "id": "quiz-retro",
+          "question": "Cuando recibes una crítica sobre tu proyecto, ¿qué haces primero?",
+          "options": [
+            "Me defiendo y explico mis razones",
+            "Pregunto qué observó la otra persona",
+            "Me quedo callado y lo pienso después",
+            "Lo descarto si no viene de alguien experto"
+          ],
+          "feedback": "No hay una respuesta correcta, pero sí una pista: preguntar qué observó la otra persona convierte un juicio en información con la que puedes trabajar."
+        }
+      ]
+    },
+    {
+      "id": "disenar-conversaciones",
+      "kicker": "Parte II · Las cinco conversaciones",
+      "title": "Diseñar la conversación que tu proyecto necesita",
+      "hero": {
+        "src": "images/disenar-conversaciones-hero.jpg",
+        "alt": "El equipo de una escudería reunido alrededor de una mesa en el garaje, de noche, conversando la estrategia de carrera con el coche cubierto al fondo.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Las conversaciones importantes no se improvisan. Aquí integrarás las cuatro anteriores en una sola práctica: preparar, conducir y cerrar una conversación."
+        },
+        {
+          "type": "heading",
+          "text": "La estrategia se conversa antes de la carrera"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ningún equipo llega a Le Mans sin haber conversado su estrategia: cuántas paradas hará, qué hacer si llueve de madrugada, quién decide ante un incidente. Diseñan esas conversaciones antes porque saben que en plena noche no habrá tiempo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tú también tienes conversaciones que definen tu carrera: con un posible socio, con un cliente molesto, con un inversionista, con tu familia. Puedes dejarlas a la suerte o puedes **diseñarlas**."
+        },
+        {
+          "type": "heading",
+          "text": "Cuatro pasos para diseñar una conversación"
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "**Propósito**: qué debe ser distinto cuando termine la conversación.",
+            "**Preparación**: qué hechos llevas, qué vas a declarar, qué vas a pedir u ofrecer.",
+            "**Conversación**: escucha antes de proponer y separa los hechos de los juicios.",
+            "**Cierre**: acuerdos explícitos, con responsable, plazo y fecha de revisión."
+          ]
+        },
+        {
+          "type": "image",
+          "id": "disenar-conversaciones-1",
+          "src": "images/disenar-conversaciones-1.jpg",
+          "alt": "Dos personas conversan sentadas frente a frente en una mesa sencilla del box, con tazas de café y una libreta abierta, vistas de perfil.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Un caso ilustrativo: la mochila que llegó mal"
+        },
+        {
+          "type": "paragraph",
+          "text": "Una emprendedora vende mochilas ecológicas por Instagram. Su publicación describe hechos verificables: plástico reciclado, resistencia al agua, precio. Un cliente recibe una mochila con una costura abierta y lo comenta en público."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ella responde con una declaración: «Nos hacemos cargo de resolverlo». Pide continuar por mensaje privado y ofrece dos opciones, reembolso o cambio. El cliente elige el cambio y ella promete el envío para el lunes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando llega la mochila nueva, ella pregunta si cumple lo esperado y escucha el juicio del cliente. Ese juicio, ahora favorable, termina en un comentario público. Las cinco conversaciones aparecieron en una sola historia."
+        },
+        {
+          "type": "image",
+          "id": "disenar-conversaciones-2",
+          "src": "images/disenar-conversaciones-2.jpg",
+          "alt": "Una mochila ecológica de tela gris dentro de una caja de envío abierta sobre una mesa, junto a un teléfono con la pantalla apagada.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "quote",
+          "text": "Una conversación bien diseñada cuida dos cosas a la vez: el resultado y la relación."
+        },
+        {
+          "type": "reflection",
+          "id": "reflexion-conversacion",
+          "question": "¿Qué conversación pendiente tiene hoy detenido tu proyecto? Escribe su propósito en una frase y el acuerdo que te gustaría cerrar.",
+          "placeholder": "Escribe tu respuesta aquí..."
+        }
+      ]
+    },
+    {
+      "id": "las-tres-areas",
+      "kicker": "Parte III · En pista",
+      "title": "Las otras tres áreas, vistas desde la conversación",
+      "hero": {
+        "src": "images/las-tres-areas-hero.jpg",
+        "alt": "Un coche de resistencia con los faros encendidos atraviesa una curva de noche, con estelas de luz y el público difuminado detrás de las vallas.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Las tres áreas del marco europeo se mantienen tal como fueron publicadas. Lo que te propongo es mirarlas desde la radio: qué conversación sostiene cada una."
+        },
+        {
+          "type": "heading",
+          "text": "Ideas y Oportunidades: aprender a mirar"
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta área reúne detectar oportunidades, creatividad, visión, valorar ideas y pensamiento ético y sostenible. Es el trabajo de quien estudia el circuito antes de salir."
+        },
+        {
+          "type": "paragraph",
+          "text": "Su conversación clave es la que tienes con tus futuros clientes. Las afirmaciones te ayudan a escuchar necesidades reales; las declaraciones convierten una visión en un rumbo que otros pueden seguir."
+        },
+        {
+          "type": "heading",
+          "text": "Recursos: reconocer y movilizar lo disponible"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aquí están autoconocimiento y autoeficacia, motivación y perseverancia, movilizar recursos, alfabetización financiera y económica, y movilizar a otros. Es el combustible, los neumáticos y la gente que hace posible cada vuelta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Casi ningún recurso llega sin una petición o una oferta. Y movilizar a otros, la competencia europea más cercana a la comunicación, se vuelve más concreta cuando sabes coordinar acciones y diseñar conversaciones."
+        },
+        {
+          "type": "image",
+          "id": "las-tres-areas-1",
+          "src": "images/las-tres-areas-1.jpg",
+          "alt": "Juegos de neumáticos apilados y bidones de combustible ordenados contra la pared de un garaje de carreras, iluminados por tubos fluorescentes.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Hacia la Acción: avanzar mientras aprendes"
+        },
+        {
+          "type": "paragraph",
+          "text": "La tercera área incluye tomar la iniciativa, planificación y gestión, afrontar la incertidumbre, la ambigüedad y el riesgo, trabajar con otros y aprender de la experiencia. Es la carrera de noche, cuando baja la visibilidad y hay que seguir."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aprender de la experiencia depende de recibir buenos juicios. Trabajar con otros depende de promesas cumplidas. Tomar la iniciativa, muchas veces, empieza con una declaración."
+        },
+        {
+          "type": "heading",
+          "text": "Cuatro áreas, una misma carrera"
+        },
+        {
+          "type": "pillars",
+          "items": [
+            {
+              "title": "Comunicación Efectiva",
+              "text": "La radio: describir, declarar, coordinar, retroalimentar y diseñar conversaciones. Aporte del Coach Jesús Díaz."
+            },
+            {
+              "title": "Ideas y Oportunidades",
+              "text": "El circuito: ver oportunidades y decidir hacia dónde ir. Área de EntreComp."
+            },
+            {
+              "title": "Recursos",
+              "text": "El box: personas, dinero y energía para cada vuelta. Área de EntreComp."
+            },
+            {
+              "title": "Hacia la Acción",
+              "text": "La pista: actuar, ajustar y aprender durante la carrera. Área de EntreComp."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "id": "las-tres-areas-2",
+          "src": "images/las-tres-areas-2.jpg",
+          "alt": "Desde la tribuna, la recta principal de noche con varios coches que pasan dejando estelas de luz roja y blanca.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Con este mapa de veinte competencias ya tienes el vocabulario. Falta lo más importante: saber cómo está hoy tu piloto."
+        }
+      ]
+    },
+    {
+      "id": "diagnostico",
+      "kicker": "Parte III · En pista",
+      "title": "¿Cómo está hoy tu piloto?",
+      "hero": {
+        "src": "images/diagnostico-hero.jpg",
+        "alt": "Un piloto sentado en el habitáculo con el casco puesto, en silencio, mira hacia la salida del box antes de comenzar su tanda.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Antes de cada tanda, el equipo revisa al piloto y al coche. Este diagnóstico te ayuda a hacer lo mismo con tus veinte competencias y a elegir por dónde empezar."
+        },
+        {
+          "type": "heading",
+          "text": "Cómo responder"
+        },
+        {
+          "type": "paragraph",
+          "text": "Responde pensando en lo que hiciste en los últimos tres meses: en tu trabajo, tus estudios, un proyecto comunitario o tu emprendimiento. Si no tuviste ocasión de practicar algo, marca «Nunca» y tómalo como una pista para observar, no como una falta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Es una autoevaluación formativa que preparé para este libro. No es un instrumento validado ni forma parte de EntreComp, y no predice el éxito de nadie. Tiene una sola función: ayudarte a elegir qué entrenar primero."
+        },
+        {
+          "type": "image",
+          "id": "diagnostico-1",
+          "src": "images/diagnostico-1.jpg",
+          "alt": "Detalle de la visera de un casco reflejando las luces del carril de boxes, con el guante del piloto apoyado en el borde del habitáculo.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "diagnostic",
+          "id": "diagnostico-piloto",
+          "eyebrow": "Autoevaluación formativa",
+          "title": "¿Cómo está hoy tu piloto?",
+          "subtitle": "Veinte afirmaciones, una por competencia de EntreComp Plus. Toma unos cuatro minutos.",
+          "intro": "Responde pensando en los últimos tres meses. No marques lo que te gustaría hacer, sino lo que realmente hiciste. Al final verás tu perfil y las dos áreas por donde te conviene empezar.",
+          "dimensions": [
+            {
+              "id": "comunicacion-efectiva",
+              "label": "Comunicación Efectiva",
+              "question": "Piensa en los últimos tres meses. ¿Con qué frecuencia te ocurre esto?",
+              "items": [
+                "Cuando explico un problema, separo los hechos verificables de mis interpretaciones.",
+                "Expreso decisiones dentro de mi ámbito de responsabilidad y actúo de acuerdo con ellas.",
+                "Cuando acuerdo algo con otra persona, dejamos claro qué se entrega, para cuándo y en qué condiciones.",
+                "Converso sobre lo que debe mejorar con ejemplos concretos y escuchando la perspectiva del otro.",
+                "Preparo mis conversaciones importantes y las cierro con un resultado o un siguiente paso claro."
+              ],
+              "insight": "Puede que tus ideas avancen más lento que tu talento porque algunas conversaciones quedan sin hechos claros, sin acuerdos o sin cierre.",
+              "advice": "Esta semana elige una petición pendiente y reescríbela con acción concreta, plazo y condiciones de satisfacción. Luego hazla en voz alta, sin rodeos."
+            },
+            {
+              "id": "ideas-oportunidades",
+              "label": "Ideas y Oportunidades",
+              "question": "Piensa en los últimos tres meses. ¿Con qué frecuencia te ocurre esto?",
+              "items": [
+                "Reconozco necesidades concretas de otras personas que podrían convertirse en una oportunidad de crear valor.",
+                "Cuando la primera solución no funciona, genero alternativas nuevas.",
+                "Describo un futuro deseable que orienta mis decisiones de hoy.",
+                "Comparo mis ideas según el valor que podrían aportar a otras personas.",
+                "Considero las consecuencias sociales y ambientales de mis decisiones."
+              ],
+              "insight": "Quizá estás acelerando con un coche que todavía no sabe a qué circuito va: hace falta más contacto con las necesidades reales de otras personas.",
+              "advice": "Conversa esta semana con tres personas que podrían usar tu propuesta. Anota solo hechos: qué hacen hoy, qué les cuesta y cuánto les cuesta. Interpreta después."
+            },
+            {
+              "id": "recursos",
+              "label": "Recursos",
+              "question": "Piensa en los últimos tres meses. ¿Con qué frecuencia te ocurre esto?",
+              "items": [
+                "Reconozco mis capacidades y mis límites antes de asumir una tarea.",
+                "Sostengo el esfuerzo ante una dificultad y ajusto mi manera de avanzar.",
+                "Consigo o combino los recursos que necesito para una acción concreta.",
+                "Uso información de costos, ingresos o presupuesto para decidir.",
+                "Consigo que otras personas apoyen una iniciativa porque comprenden su propósito."
+              ],
+              "insight": "El combustible, el dinero o el apoyo de otras personas pueden quedarse cortos para la carrera que quieres correr.",
+              "advice": "Haz una lista de lo que necesitas para tu próxima acción y, junto a cada recurso, escribe a quién se lo puedes pedir. Haz al menos una de esas peticiones antes del viernes."
+            },
+            {
+              "id": "hacia-la-accion",
+              "label": "Hacia la Acción",
+              "question": "Piensa en los últimos tres meses. ¿Con qué frecuencia te ocurre esto?",
+              "items": [
+                "Inicio las acciones necesarias sin esperar instrucciones detalladas.",
+                "Organizo tareas y prioridades, y ajusto el plan cuando cambia la situación.",
+                "Tomo decisiones con información incompleta, reconociendo los riesgos que asumo.",
+                "Colaboro con personas de perspectivas diferentes para alcanzar un resultado compartido.",
+                "Extraigo aprendizajes de lo que sucede y los aplico en acciones posteriores."
+              ],
+              "insight": "Tienes material para avanzar, pero el paso de la idea a la pista se está demorando o no te está dejando aprendizajes.",
+              "advice": "Elige una acción pequeña que puedas terminar en siete días y ponle fecha. Al cerrarla, escribe en tres líneas qué salió bien, qué no y qué cambiarás."
+            }
+          ],
+          "profiles": [
+            {
+              "max": 2.4,
+              "emoji": "🏁",
+              "title": "Vuelta de reconocimiento",
+              "strength": "Estás mirando con honestidad tus competencias, y eso ya es entrenar al piloto.",
+              "risk": "Querer cambiarlo todo a la vez y agotarte antes de la primera tanda.",
+              "next": "Elige una sola competencia de tu primera prioridad y practícala durante dos semanas."
+            },
+            {
+              "max": 3.4,
+              "emoji": "🔧",
+              "title": "Ajustes en boxes",
+              "strength": "Ya pones en práctica varias competencias, sobre todo en situaciones sencillas.",
+              "risk": "Que lo que haces bien dependa del ánimo del día y no de una práctica consciente.",
+              "next": "Convierte tu prioridad en un hábito semanal con evidencia: un acuerdo escrito, una nota, un mensaje."
+            },
+            {
+              "max": 4.2,
+              "emoji": "🏎️",
+              "title": "Ritmo de carrera",
+              "strength": "Practicas por tu cuenta la mayoría de las competencias, incluso en situaciones exigentes.",
+              "risk": "Confiar en tu ritmo y dejar de pedir retroalimentación.",
+              "next": "Pide a alguien de confianza un juicio fundado sobre tu prioridad y contrástalo con tu propia lectura."
+            },
+            {
+              "max": 5,
+              "emoji": "🌅",
+              "title": "Piloto de resistencia",
+              "strength": "Sostienes tus competencias en el tiempo y en condiciones difíciles.",
+              "risk": "Que tu ritmo haga que otras personas dependan demasiado de ti.",
+              "next": "Acompaña a otra persona en la competencia que mejor dominas: enseñar es tu siguiente vuelta."
+            }
+          ],
+          "priorities": {
+            "count": 2,
+            "order": "lowest",
+            "heading": "Por dónde empezar",
+            "eyebrow": "Prioridad",
+            "levelLabel": "Puntaje"
+          },
+          "email": {
+            "heroImage": "images/portada.jpg",
+            "ctaText": "Volver al libro",
+            "ctaUrl": "https://coach-jd.github.io/entrecomp-plus/"
+          },
+          "closingLine": "Recuerda: le apuesto al piloto, no al coche.",
+          "gate": {
+            "heading": "Tu resultado está listo",
+            "bullets": [
+              "Tu perfil de piloto y el puntaje de las cuatro áreas",
+              "Tus dos prioridades, cada una con una acción para esta semana",
+              "Una copia en tu correo para revisarla en tu fecha de revisión"
+            ],
+            "namePlaceholder": "Tu nombre",
+            "emailPlaceholder": "tu@email.com",
+            "buttonText": "Ver mi resultado",
+            "note": "Usamos tu correo solo para enviarte tu resultado."
+          }
+        },
+        {
+          "type": "heading",
+          "text": "Tu plan para la próxima tanda"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando veas tu resultado, no intentes mejorar todo a la vez. Elige **una competencia** de tu área prioritaria y completa estas cuatro casillas:"
+        },
+        {
+          "type": "list",
+          "style": "numbered",
+          "items": [
+            "**Competencia elegida**: la que más necesita tu siguiente paso, no necesariamente la de menor puntaje.",
+            "**Acción de práctica**: algo concreto que harás esta semana.",
+            "**Evidencia**: lo que guardarás para saber que ocurrió, como un acuerdo escrito, un mensaje o una nota.",
+            "**Fecha de revisión**: el día en que volverás a mirarlo."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Por ejemplo, quien necesita cerrar un acuerdo con un posible socio puede priorizar coordinar acciones, aunque su puntaje más bajo esté en finanzas. La pregunta que decide es esta: ¿qué competencia necesito practicar para desbloquear mi siguiente paso?"
+        }
+      ]
+    },
+    {
+      "id": "epilogo",
+      "kicker": "Epílogo",
+      "title": "Volver a la pista con otra mirada",
+      "hero": {
+        "src": "images/epilogo-hero.jpg",
+        "alt": "Amanecer sobre la recta principal: un coche de resistencia cubierto de polvo sigue en carrera mientras el cielo se tiñe de naranja.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Si hoy volviera a presentar Polimetrajes en el Concurso IDEAS, el coche sería parecido. El piloto, no."
+        },
+        {
+          "type": "paragraph",
+          "text": "Llevaría hechos y no solo entusiasmo: cuántas personas había entrevistado, cómo consumían ya contenidos interactivos, qué estaban dispuestas a pagar. Declararía un rumbo concreto en lugar de una visión enorme. Y saldría de cada reunión con una promesa clara: quién hace qué y para cuándo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sobre todo, escucharía al jurado de otra manera. Sus juicios no eran una sentencia sobre mí. Eran información sobre cómo veían mi proyecto personas con experiencia, y esa información valía más que el premio."
+        },
+        {
+          "type": "heading",
+          "text": "Lo que hagas después de cerrar este libro"
+        },
+        {
+          "type": "paragraph",
+          "text": "No sé si aquella versión mía habría ganado. Tal vez no, y está bien. Lo que sí sé es que habría aprendido mucho más rápido... y en una carrera de resistencia eso marca la diferencia."
+        },
+        {
+          "type": "image",
+          "id": "epilogo-1",
+          "src": "images/epilogo-1.jpg",
+          "alt": "Un piloto de espaldas, con el casco bajo el brazo, camina por el carril de boxes vacío hacia la luz del amanecer.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ahora te toca a ti. Tienes un mapa con veinte competencias, cinco conversaciones para entrenar y un diagnóstico que te dice por dónde empezar. Vuelve a la pista con una sola competencia, una acción y una fecha."
+        },
+        {
+          "type": "quote",
+          "text": "Las ideas cambian. Los pilotos que aprenden siguen en carrera."
+        },
+        {
+          "type": "paragraph",
+          "text": "¡Nos vemos en la pista!"
+        },
+        {
+          "type": "button",
+          "text": "Hacer o repetir el diagnóstico",
+          "url": "#diagnostico",
+          "style": "ghost"
+        }
+      ],
+      "numbered": false
+    },
+    {
+      "id": "fuentes",
+      "kicker": "Anexo",
+      "title": "El mapa completo y sus fuentes",
+      "hero": {
+        "src": "images/fuentes-hero.jpg",
+        "alt": "Vista cenital del carril de boxes ordenado y vacío, con las marcas de posición de cada equipo pintadas en el asfalto.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Aquí tienes las veinte competencias de EntreComp Plus en un solo lugar, con su origen identificado, y las fuentes que sostienen este libro."
+        },
+        {
+          "type": "heading",
+          "text": "Comunicación Efectiva · aporte del Coach Jesús Díaz"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "CE-01 · Describir el mundo y sus fenómenos (afirmaciones)",
+            "CE-02 · Generar un mundo nuevo (declaraciones)",
+            "CE-03 · Coordinar acciones con otros (peticiones, ofertas y promesas)",
+            "CE-04 · Dar y recibir retroalimentación (juicios)",
+            "CE-05 · Diseñar conversaciones"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Ideas y Oportunidades · EntreComp"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Detectar oportunidades",
+            "Creatividad",
+            "Visión",
+            "Valorar ideas",
+            "Pensamiento ético y sostenible"
+          ]
+        },
+        {
+          "type": "image",
+          "id": "fuentes-1",
+          "src": "images/fuentes-1.jpg",
+          "alt": "Una mesa de trabajo con una libreta cerrada, un bolígrafo y un casco de carreras, iluminada por la luz de la mañana que entra por la puerta del garaje.",
+          "aspect": "3:2"
+        },
+        {
+          "type": "heading",
+          "text": "Recursos · EntreComp"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Autoconocimiento y autoeficacia",
+            "Motivación y perseverancia",
+            "Movilizar recursos",
+            "Alfabetización financiera y económica",
+            "Movilizar a otros"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Hacia la Acción · EntreComp"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Tomar la iniciativa",
+            "Planificación y gestión",
+            "Afrontar la incertidumbre, la ambigüedad y el riesgo",
+            "Trabajar con otros",
+            "Aprender de la experiencia"
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "Atribución y licencia"
+        },
+        {
+          "type": "paragraph",
+          "text": "EntreComp Plus es una propuesta independiente del Coach Jesús Díaz. Las tres áreas y las quince competencias de EntreComp se presentan sin modificación y pertenecen al marco publicado por la Comisión Europea. Este libro no implica aprobación ni respaldo de la Comisión Europea."
+        },
+        {
+          "type": "paragraph",
+          "text": "La teoría de los actos lingüísticos que fundamenta el área Comunicación Efectiva conserva su propia autoría y se cita abajo. Puedes compartir y adaptar el área Comunicación Efectiva con fines no comerciales, citando al autor y el nombre EntreComp Plus."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los casos marcados como ilustrativos son ejemplos construidos para explicar un concepto. No son testimonios ni evidencia de eficacia."
+        },
+        {
+          "type": "heading",
+          "text": "Fuentes"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "Bacigalupo, M., Kampylis, P., Punie, Y. y Van den Brande, G. (2016). [EntreComp: The Entrepreneurship Competence Framework](https://publications.jrc.ec.europa.eu/repository/handle/JRC101581). Luxemburgo: Oficina de Publicaciones de la Unión Europea. EUR 27939 EN. doi:10.2791/593884.",
+            "Echeverría, R. (1994). Ontología del lenguaje. Santiago de Chile: Dolmen Ediciones.",
+            "Austin, J. L. (1962). How to Do Things with Words. Oxford: Clarendon Press.",
+            "Searle, J. R. (1969). Speech Acts: An Essay in the Philosophy of Language. Cambridge: Cambridge University Press.",
+            "Winograd, T. y Flores, F. (1986). Understanding Computers and Cognition. Norwood: Ablex.",
+            "Díaz, J. (2020). El Viaje del Héroe Emprendedor."
+          ]
+        },
+        {
+          "type": "button",
+          "text": "Hacer el diagnóstico",
+          "url": "#diagnostico",
+          "style": "primary"
+        }
+      ],
+      "numbered": false
+    }
+  ]
+}
