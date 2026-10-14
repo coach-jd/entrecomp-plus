@@ -8,7 +8,7 @@ quien lo mantiene; no hace falta saber programar para lo habitual.
 
 ## Estado de este proyecto
 
-- **Imágenes pendientes:** 29 (portada, 13 hero y 15 de apoyo) — ver `prompts-imagenes.md`. Al tener la portada, ejecutar `make_share_image.py` para crear `images/compartir.jpg`.
+- **Imágenes pendientes:** 1 (`images/sobre-el-autor-1.jpg`) — ver `prompts-imagenes.md`. Las demás están optimizadas a 1600 px (hero) y 1200 px (apoyo, vertical 3:4), menos de 400 KB cada una. Los originales en alta resolución quedaron fuera del repositorio, en `../imagenes-originales/`.
 - **Leads:** en modo demo. Falta `meta.leads` (EmailJS y/o webhook de n8n). La plantilla del correo está lista en `email/plantilla-diagnostico.html`.
 - **Por revisar del autor:** todo el texto es un primer borrador en la voz del autor; en especial las 20 afirmaciones, los 4 perfiles y las orientaciones del diagnóstico, la licencia del anexo (no comercial) y los textos del correo.
 

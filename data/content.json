@@ -9,6 +9,7 @@
     "url": "https://coach-jd.github.io/entrecomp-plus/",
     "lang": "es",
     "coverImage": "images/portada.jpg",
+    "coverAspect": "16:9",
     "coverImageAlt": "Un coche de resistencia con los faros encendidos sale del carril de boxes hacia la pista al anochecer, mientras el equipo lo observa desde el muro.",
     "readingTimeMinutes": 19,
     "startLabel": "Arrancar la carrera",
@@ -57,7 +58,7 @@
           "id": "prologo-1",
           "src": "images/prologo-1.jpg",
           "alt": "Sobre un escritorio de madera, una libreta abierta con bocetos de guion gráfico a lápiz, una cámara de video antigua y una taza de café, bajo la luz de una lámpara.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -154,7 +155,7 @@
           "id": "el-piloto-1",
           "src": "images/el-piloto-1.jpg",
           "alt": "Primer plano de las manos de un piloto con guantes sobre el volante de un coche de carreras, con el habitáculo en penumbra.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -236,7 +237,7 @@
           "id": "mapa-europeo-1",
           "src": "images/mapa-europeo-1.jpg",
           "alt": "Un ingeniero de pista, de espaldas, estudia un plano impreso del circuito extendido sobre la mesa del box, con marcas a lápiz que no se alcanzan a leer.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -303,7 +304,7 @@
           "id": "los-pits-1",
           "src": "images/los-pits-1.jpg",
           "alt": "Detalle de los auriculares y el micrófono de radio de un ingeniero de pista apoyados sobre el muro de boxes, con la pista desenfocada al fondo.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -407,7 +408,7 @@
           "id": "afirmaciones-1",
           "src": "images/afirmaciones-1.jpg",
           "alt": "Manos que toman notas en una libreta junto a una pantalla de tiempos por vuelta completamente desenfocada, en el muro de boxes.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -486,7 +487,7 @@
           "id": "declaraciones-1",
           "src": "images/declaraciones-1.jpg",
           "alt": "Primer plano de la mano enguantada de un comisario de pista que sostiene una bandera enrollada, a punto de desplegarla.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -562,7 +563,7 @@
           "id": "coordinar-acciones-1",
           "src": "images/coordinar-acciones-1.jpg",
           "alt": "Detalle de un mecánico arrodillado que sujeta la pistola neumática sobre la rueda, esperando la señal de su compañero.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -638,7 +639,7 @@
           "id": "retroalimentacion-1",
           "src": "images/retroalimentacion-1.jpg",
           "alt": "Un casco de carreras apoyado sobre una mesa del box junto a unas hojas de tiempos boca abajo, bajo una luz cálida.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -719,7 +720,7 @@
           "id": "disenar-conversaciones-1",
           "src": "images/disenar-conversaciones-1.jpg",
           "alt": "Dos personas conversan sentadas frente a frente en una mesa sencilla del box, con tazas de café y una libreta abierta, vistas de perfil.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -742,7 +743,7 @@
           "id": "disenar-conversaciones-2",
           "src": "images/disenar-conversaciones-2.jpg",
           "alt": "Una mochila ecológica de tela gris dentro de una caja de envío abierta sobre una mesa, junto a un teléfono con la pantalla apagada.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "quote",
@@ -799,7 +800,7 @@
           "id": "las-tres-areas-1",
           "src": "images/las-tres-areas-1.jpg",
           "alt": "Juegos de neumáticos apilados y bidones de combustible ordenados contra la pared de un garaje de carreras, iluminados por tubos fluorescentes.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -843,7 +844,7 @@
           "id": "las-tres-areas-2",
           "src": "images/las-tres-areas-2.jpg",
           "alt": "Desde la tribuna, la recta principal de noche con varios coches que pasan dejando estelas de luz roja y blanca.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "paragraph",
@@ -882,7 +883,7 @@
           "id": "diagnostico-1",
           "src": "images/diagnostico-1.jpg",
           "alt": "Detalle de la visera de un casco reflejando las luces del carril de boxes, con el guante del piloto apoyado en el borde del habitáculo.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "diagnostic",
@@ -1068,7 +1069,7 @@
           "id": "epilogo-1",
           "src": "images/epilogo-1.jpg",
           "alt": "Un piloto de espaldas, con el casco bajo el brazo, camina por el carril de boxes vacío hacia la luz del amanecer.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "paragraph",
@@ -1140,7 +1141,7 @@
           "id": "fuentes-1",
           "src": "images/fuentes-1.jpg",
           "alt": "Una mesa de trabajo con una libreta cerrada, un bolígrafo y un casco de carreras, iluminada por la luz de la mañana que entra por la puerta del garaje.",
-          "aspect": "3:2"
+          "aspect": "3:4"
         },
         {
           "type": "heading",
@@ -1203,6 +1204,63 @@
             "Winograd, T. y Flores, F. (1986). Understanding Computers and Cognition. Norwood: Ablex.",
             "Díaz, J. (2020). El Viaje del Héroe Emprendedor."
           ]
+        }
+      ],
+      "numbered": false
+    },
+    {
+      "id": "sobre-el-autor",
+      "kicker": "Sobre el autor",
+      "title": "Jesús Díaz, Coach JD",
+      "hero": {
+        "src": "images/sobre-el-autor-hero.jpg",
+        "alt": "Retrato de Jesús Díaz, sonriente, con chaqueta gris oscura y camiseta negra, en una oficina luminosa con gráficos y notas adhesivas en la pared del fondo.",
+        "aspect": "16:9"
+      },
+      "blocks": [
+        {
+          "type": "lead",
+          "text": "Soy Jesús Díaz, pero casi todos me conocen como **Coach JD**. Acompaño a emprendedores a convertir sus ideas en proyectos, poniendo la atención en el piloto antes que en el coche."
+        },
+        {
+          "type": "paragraph",
+          "text": "Soy coach ontológico, especializado en emprendimiento e innovación. Llegué al coaching después de llevar a Polimetrajes, mi productora de contenidos interactivos, dos veces a la final del Concurso IDEAS, en 2008 y en 2010, sin ganarlo. Esa experiencia me enseñó más que cualquier premio."
+        },
+        {
+          "type": "heading",
+          "text": "Lo que he construido en el camino"
+        },
+        {
+          "type": "list",
+          "style": "bullet",
+          "items": [
+            "**El Viaje del Héroe Emprendedor** (2020), un libro donde cuento mi historia de emprendimiento etapa por etapa, junto a las de otros emprendedores.",
+            "**Circanvas®**, un simulador de emprendimiento para sesiones de coaching grupal, que nació de las ideas desordenadas que compartí en una cabaña con Saúl Escalona y Carlos Luna.",
+            "**EntreComp Plus**, la ampliación del marco europeo EntreComp con el área Comunicación Efectiva que acabas de recorrer."
+          ]
+        },
+        {
+          "type": "image",
+          "id": "sobre-el-autor-1",
+          "src": "images/sobre-el-autor-1.jpg",
+          "alt": "Manos de varias personas alrededor de una mesa de taller con un tablero de juego de simulación de emprendimiento, fichas de colores y tarjetas, bajo una luz cálida.",
+          "aspect": "3:4"
+        },
+        {
+          "type": "heading",
+          "text": "Por qué escribí este libro"
+        },
+        {
+          "type": "paragraph",
+          "text": "Confieso que durante años me avergonzó contar mi historia. Hoy la cuento porque creo que a muchos emprendedores les pasa lo mismo que a mí: pulen la idea y descuidan las conversaciones que la harían avanzar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mi fe cristiana es la lente desde la que interpreto mi camino, y mi trabajo es mi manera de servir. Si este libro te ayudó a dar tu siguiente paso, para mí ya valió la pena."
+        },
+        {
+          "type": "quote",
+          "text": "Tú tendrás siempre las manos sobre el volante; yo solo seré tu guía."
         },
         {
           "type": "button",

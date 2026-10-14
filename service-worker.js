@@ -23,7 +23,7 @@
      sitio no funciona offline.
 */
 
-const CACHE_NAME = 'entrecomp-plus-v1';
+const CACHE_NAME = 'entrecomp-plus-v2';
 
 const APP_SHELL = [
   './',
