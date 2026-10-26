@@ -1,22 +1,10 @@
 <!--
   EntreComp Plus: le apuesto al piloto, no al coche
-  Plantilla de EmailJS para el resultado del diagnóstico «¿Cómo está hoy tu piloto?»
-
-  CÓMO USARLA
-  1. EmailJS → Email Templates → nueva plantilla → pestaña "Content" →
-     botón de editar código (<>) → pega TODO este archivo.
-  2. Campos de la plantilla:
-       Subject:    Tu resultado de {{diagnostic_title}}
-       To Email:   {{to_email}}
-       From Name:  Coach Jesús Díaz
-       Reply To:   (tu correo)
-       Bcc:        (tu correo, para recibir cada diagnóstico como lead)
-  3. Copia el Template ID, el Service ID y la Public Key a
-     data/content.json → meta.leads.emailjs.
-  4. En la seguridad de la cuenta, limita los dominios a coachjesusdiaz.com.
-
-  Muestra DOS prioridades (priorities.count = 2). Las imágenes se cargan
-  desde https://coachjesusdiaz.com/libro_web/entrecomp_plus/ cuando ya están publicadas.
+  Plantilla del correo de resultado del diagnóstico «¿Cómo está hoy tu piloto?».
+  La usa el servicio PHP de libro_web/correo/ (clave del libro: entrecomp_plus):
+  lee este archivo desde el servidor, lo rellena y lo envía por SMTP desde
+  hola@coachjesusdiaz.com, con copia oculta al autor. Se sube con el libro.
+  Muestra DOS prioridades (priorities.count = 2).
 -->
 <div style="margin:0;padding:0;background:#eceae4;">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eceae4;">

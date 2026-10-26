@@ -17,6 +17,16 @@
     "ui": {
       "end": "Volver a la parrilla de salida",
       "diagAdvice": "Tu acción para esta semana"
+    },
+    "leads": {
+      "webhook": {
+        "url": "https://coachjesusdiaz.com/libro_web/correo/enviar.php?libro=entrecomp_plus",
+        "sendsEmail": true
+      },
+      "consent": {
+        "text": "Acepto recibir mi resultado y contenido relacionado del Coach Jesús Díaz por correo.",
+        "required": true
+      }
     }
   },
   "chapters": [
