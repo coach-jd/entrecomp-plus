@@ -1,6 +1,6 @@
 # EntreComp Plus: le apuesto al piloto, no al coche — Libro Web™
 
-Guía del Coach Jesús Díaz para desarrollar competencias emprendedoras, basada en EntreComp (Comisión Europea) más el área Comunicación Efectiva. Publicado en https://coach-jd.github.io/entrecomp-plus/
+Guía del Coach Jesús Díaz para desarrollar competencias emprendedoras, basada en EntreComp (Comisión Europea) más el área Comunicación Efectiva. Publicado en https://coachjesusdiaz.com/libro_web/entrecomp_plus/
 
 Este proyecto es un **Libro Web**: un sitio estático que se lee por
 capítulos, se instala como app y funciona sin conexión. Esta guía es para
@@ -93,7 +93,7 @@ Para el correo de resultado con EmailJS:
 
 Es un sitio estático: sube la carpeta completa a cualquier hosting.
 
-Este libro se publica con **GitHub Pages** desde la rama `main` del repositorio `coach-jd/entrecomp-plus`: cada `git push` actualiza el sitio en uno o dos minutos.
+Este libro se publica en el hosting del autor, en `public_html/libro_web/entrecomp_plus/` (https://coachjesusdiaz.com/libro_web/entrecomp_plus/). Para actualizarlo se suben ahí `index.html`, `manifest.json`, `service-worker.js` y las carpetas `css/`, `js/`, `data/`, `images/` e `icons/`. El código fuente vive en el repositorio `coach-jd/entrecomp-plus`.
 
 Una vez publicado con `https://`, los lectores pueden instalarlo con el
 botón **"Descargar la app"** que está al final del índice.

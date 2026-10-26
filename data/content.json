@@ -6,7 +6,7 @@
     "coverKicker": "Un Libro Web del Coach Jesús Díaz",
     "subtitle": "Las conversaciones que ponen tus ideas en movimiento. Una guía para desarrollar tus competencias emprendedoras, basada en EntreComp, el marco europeo.",
     "author": "Coach Jesús Díaz",
-    "url": "https://coach-jd.github.io/entrecomp-plus/",
+    "url": "https://coachjesusdiaz.com/libro_web/entrecomp_plus/",
     "lang": "es",
     "coverImage": "images/portada.jpg",
     "coverAspect": "16:9",
@@ -995,7 +995,7 @@
           "email": {
             "heroImage": "images/portada.jpg",
             "ctaText": "Volver al libro",
-            "ctaUrl": "https://coach-jd.github.io/entrecomp-plus/"
+            "ctaUrl": "https://coachjesusdiaz.com/libro_web/entrecomp_plus/"
           },
           "closingLine": "Recuerda: le apuesto al piloto, no al coche.",
           "gate": {
