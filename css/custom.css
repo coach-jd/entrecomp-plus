@@ -1,0 +1,62 @@
+/* =========================================================
+   Estilos propios de este libro.
+   Todo lo que cambie el aspecto de UN libro (y no del motor) va aquí:
+   las actualizaciones del motor (upgrade_book.py) nunca tocan este
+   archivo. La paleta y la tipografía siguen en :root de styles.css.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Portada: rótulo y título SOBRE la foto (decisión del autor).
+   Solo CSS: .cover pasa a ser una grilla y .cover-copy se "disuelve"
+   (display: contents) para que el rótulo y el título ocupen la parte
+   baja de la imagen. Si la imagen no carga, el motor oculta
+   .cover-hero-wrap y la portada vuelve sola al diseño normal.
+   --------------------------------------------------------- */
+.cover:has(> .cover-hero-wrap:not([hidden])){
+  display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr auto auto;
+  text-align: center;
+}
+.cover:has(> .cover-hero-wrap:not([hidden])) > .cover-hero-wrap{ grid-column: 1; grid-row: 1 / 4; }
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-hero{
+  aspect-ratio: auto !important; height: min(60vh, 640px); min-height: 380px; border-bottom: 0;
+}
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-hero-fade{
+  top: 0; bottom: 0; height: auto;
+  background: linear-gradient(to top, rgba(10,12,20,.9) 0%, rgba(10,12,20,.55) 40%, rgba(10,12,20,0) 75%);
+}
+.cover:has(> .cover-hero-wrap:not([hidden])) > .cover-copy{ display: contents; }
+.cover:has(> .cover-hero-wrap:not([hidden])) > .cover-copy > *{
+  grid-column: 1; justify-self: center; position: relative; z-index: 1;
+  width: min(100% - 2 * var(--gutter), var(--max-width));
+}
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-kicker{ grid-row: 2; color: #f0a050; margin: 0 auto .5rem; }
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-title{
+  grid-row: 3; color: #ffffff; margin: 0 auto 2.2rem; text-shadow: 0 2px 18px rgba(0,0,0,.6);
+}
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-title .accent-term{ color: #f2a6cf; }
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-subtitle{ margin-top: 1.3rem; }
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-actions{ margin-top: 1.3rem; }
+.cover:has(> .cover-hero-wrap:not([hidden])) .cover-hint{ margin-bottom: 3rem; }
+
+/* ---------------------------------------------------------
+   Paleta de los temas oscuro y claro manual (upgrade_book.py solo
+   conserva el primer :root de styles.css; estos bloques viven aquí).
+   --------------------------------------------------------- */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg: #12141c; --bg-elevated: #1b1e29; --text: #f1efe9; --text-muted: #b4b7c4;
+    --accent: #e58bbd; --accent-contrast: #12141c; --accent-secondary: #f0a050; --border: #2f3342;
+  }
+}
+:root[data-theme="dark"]{
+  --bg: #12141c; --bg-elevated: #1b1e29; --text: #f1efe9; --text-muted: #b4b7c4;
+  --accent: #e58bbd; --accent-contrast: #12141c; --accent-secondary: #f0a050; --border: #2f3342;
+}
+:root[data-theme="light"]{
+  --bg: #f7f5f0; --bg-elevated: #ffffff; --text: #161a2e; --text-muted: #4f5468;
+  --accent: #8a2f63; --accent-contrast: #ffffff; --accent-secondary: #1d6672; --border: #e3dfd6;
+}
+
+/* Diagnóstico: en 375 px el botón «Siguiente →» se salía 1 px. */
+.diag-nav{ gap: .5rem; }
+.diag-nav .btn{ padding-left: 1rem; padding-right: 1rem; }

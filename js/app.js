@@ -14,6 +14,10 @@
 
   // Cambia este prefijo por libro (evita choques si publicas más de un
   // Libro Web bajo el mismo dominio, ya que todos comparten localStorage).
+  // Versión del motor. upgrade_book.py la usa para saber desde qué versión
+  // se actualiza un libro. No la cambies a mano.
+  const ENGINE_VERSION = '3.0';
+
   const STORAGE_PREFIX = 'entrecomp_plus_';
 
   // Textos de la interfaz. Cualquiera se puede reemplazar desde
@@ -204,23 +208,10 @@
       if (meta.coverAspect && !poster) els.coverHero.style.aspectRatio = String(meta.coverAspect).replace(':', ' / ');
       if (meta.coverPosition && !poster) els.coverHero.style.objectPosition = meta.coverPosition;
       els.coverHero.addEventListener('error', () => els.cover.classList.remove('cover-poster'));
-      // meta.coverOverlay: el rótulo y el título se escriben encima de la imagen.
-      // Si la imagen falla, vuelven a su lugar en .cover-copy.
-      if (meta.coverOverlay === true && heroWrap !== els.coverHero) {
-        const copy = els.coverTitle.parentNode;
-        const overlay = document.createElement('div');
-        overlay.className = 'cover-overlay';
-        overlay.appendChild(els.coverKicker);
-        overlay.appendChild(els.coverTitle);
-        heroWrap.appendChild(overlay);
-        els.cover.classList.add('cover-overlay-mode');
-        els.coverHero.addEventListener('error', () => {
-          els.cover.classList.remove('cover-overlay-mode');
-          copy.insertBefore(els.coverTitle, copy.firstChild);
-          copy.insertBefore(els.coverKicker, els.coverTitle);
-        });
-      }
-      els.coverHero.src = meta.coverImage;
+      // coverImageWide (opcional): versión horizontal de la portada para
+      // pantallas anchas; en celular se usa siempre coverImage.
+      const wide = meta.coverImageWide && window.matchMedia('(min-width: 900px) and (orientation: landscape)').matches;
+      els.coverHero.src = wide ? meta.coverImageWide : meta.coverImage;
     }
 
     const parts = [];
@@ -289,6 +280,11 @@
      no existe. Así se puede maquetar el libro completo antes de tener las
      imágenes finales, y sumarlas después sin tocar nada más. */
   function buildImageFigure(data, opts = {}) {
+    // srcWide / aspectWide (opcional): versión horizontal de la imagen para
+    // pantallas anchas; en celular se usa src (por ejemplo, una infografía vertical).
+    if (data.srcWide && window.matchMedia('(min-width: 720px)').matches) {
+      data = Object.assign({}, data, { src: data.srcWide, aspect: data.aspectWide || data.aspect });
+    }
     const figure = document.createElement('figure');
     const frame = document.createElement('div');
     frame.className = 'image-frame';
@@ -469,6 +465,60 @@
       wrap.appendChild(feedback);
       return wrap;
     },
+    // Sobre el autor: foto, nombre, rol, biografía, enlaces y un botón.
+    // Va en el último capítulo, marcado con "about": true.
+    author(block) {
+      const wrap = document.createElement('div');
+      wrap.className = 'author-block';
+      if (block.photo) {
+        const photo = document.createElement('div');
+        photo.className = 'author-photo';
+        photo.appendChild(buildImageFigure({ src: block.photo, alt: block.photoAlt || block.name || '' }, { defaultAspect: '1:1' }));
+        wrap.appendChild(photo);
+      }
+      const head = document.createElement('div');
+      head.className = 'author-head';
+      if (block.name) {
+        const name = document.createElement('h2');
+        name.className = 'author-name';
+        name.textContent = block.name;
+        head.appendChild(name);
+      }
+      if (block.role) {
+        const role = document.createElement('p');
+        role.className = 'author-role';
+        role.textContent = block.role;
+        head.appendChild(role);
+      }
+      wrap.appendChild(head);
+      const bio = Array.isArray(block.bio) ? block.bio : (block.bio ? [block.bio] : []);
+      bio.forEach(text => {
+        const p = document.createElement('p');
+        p.className = 'author-bio';
+        p.innerHTML = mdInline(text);
+        wrap.appendChild(p);
+      });
+      if (Array.isArray(block.links) && block.links.length) {
+        const ul = document.createElement('ul');
+        ul.className = 'author-links';
+        block.links.forEach(l => {
+          if (!l || !l.url) return;
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = l.url;
+          if (!/^#/.test(l.url)) { a.target = '_blank'; a.rel = 'noopener'; }
+          a.textContent = l.text || l.url;
+          li.appendChild(a);
+          ul.appendChild(li);
+        });
+        wrap.appendChild(ul);
+      }
+      if (block.button && block.button.url) {
+        wrap.appendChild(blockRenderers.button(Object.assign({ style: 'primary' }, block.button)));
+      }
+      return wrap;
+    },
+
     // Botón-enlace: lleva a una agenda, WhatsApp, página de venta, etc.
     button(block) {
       const wrap = document.createElement('div');
@@ -549,17 +599,43 @@
     return box ? box.checked : null;
   }
 
+  // Plantilla universal (meta.leads.emailjs.render): el correo se arma aquí,
+  // a partir de un archivo HTML del propio libro, y viaja completo a EmailJS
+  // en {{{email_html}}} con su asunto en {{email_subject}}. Así una sola
+  // plantilla de EmailJS sirve para todos los libros.
+  //   {{variable}}   → valor con el HTML escapado
+  //   {{{variable}}} → valor tal cual (bloques HTML que arma el motor)
+  function fillTemplate(text, params, escape) {
+    return String(text)
+      .replace(/\{\{\{\s*(\w+)\s*\}\}\}/g, (m, k) => (params[k] == null ? '' : String(params[k])))
+      .replace(/\{\{\s*(\w+)\s*\}\}/g, (m, k) => {
+        const v = params[k] == null ? '' : String(params[k]);
+        return escape ? escapeHtml(v) : v;
+      });
+  }
+  async function renderEmail(lead, render) {
+    const res = await fetch(render.file, { cache: 'no-cache' });
+    if (!res.ok) throw new Error('No se pudo cargar ' + render.file);
+    const html = (await res.text()).replace(/^\s*<!--[\s\S]*?-->\s*/, '');
+    return Object.assign({}, lead.params, {
+      email_subject: fillTemplate(render.subject || '{{book_title}}', lead.params, false),
+      email_html: fillTemplate(html, lead.params, true),
+    });
+  }
+
   async function deliverLead(lead) {
     const cfg = leadsConfig();
     const jobs = [];
     const ej = cfg.emailjs;
     const templateId = ej && ej.templates && ej.templates[lead.type];
     if (ej && ej.serviceId && ej.publicKey && templateId) {
-      jobs.push(fetch(EMAILJS_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ service_id: ej.serviceId, template_id: templateId, user_id: ej.publicKey, template_params: lead.params }),
-      }).then(res => { if (!res.ok) throw new Error('EmailJS respondió ' + res.status); return 'emailjs'; }));
+      const render = ej.render && ej.render[lead.type];
+      jobs.push(Promise.resolve(render && render.file ? renderEmail(lead, render) : lead.params)
+        .then(params => fetch(EMAILJS_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ service_id: ej.serviceId, template_id: templateId, user_id: ej.publicKey, template_params: params }),
+        })).then(res => { if (!res.ok) throw new Error('EmailJS respondió ' + res.status); return 'emailjs'; }));
     }
     if (cfg.webhook && cfg.webhook.url) {
       jobs.push(fetch(cfg.webhook.url, {
@@ -664,6 +740,27 @@
     }
     const scaleLabels = (Array.isArray(block.scaleLabels) && block.scaleLabels.length) ? block.scaleLabels : t('diagScale');
     const scaleMax = scaleLabels.length;
+    // "scoring" (opcional): { "scaleMin": 0 } hace que la primera etiqueta
+    // valga 0 en vez de 1. { "mode": "sequential", "threshold": 10 } cambia
+    // la lectura del resultado: en vez de promediar, el perfil lo decide la
+    // primera dimensión cuya suma queda por debajo del umbral (una fortaleza
+    // posterior no compensa una debilidad anterior). "levels" (opcional)
+    // traduce la suma de cada dimensión a una lectura en palabras.
+    const scoring = block.scoring || {};
+    const scaleMin = typeof scoring.scaleMin === 'number' ? scoring.scaleMin : 1;
+    const scaleTop = scaleMin + scaleMax - 1;
+    const sequential = scoring.mode === 'sequential';
+    const threshold = Number(scoring.threshold) || 0;
+    const levels = Array.isArray(block.levels) ? block.levels : [];
+    function levelOf(sum) { return levels.length ? pickByMax(levels, sum).label : ''; }
+    // Posición del perfil en modo secuencial: cuántas dimensiones seguidas
+    // (sin contar la última) alcanzan el umbral.
+    function sequentialIndex(dimAverages) {
+      let n = 0;
+      while (n < dimAverages.length - 1 && dimAverages[n].sum >= threshold) n++;
+      return n;
+    }
+    function profileValue(dimAverages, overall) { return sequential ? sequentialIndex(dimAverages) : overall; }
 
     function loadAnswers() {
       const saved = lsGet('diag_answers_' + block.id, null);
@@ -684,14 +781,14 @@
     function dimAnswered(dim) { return state.answers[dim.id].every(v => v !== null); }
     function allAnswered() { return dimensions.every(dimAnswered); }
 
-    function toPct(avg) { return scaleMax > 1 ? Math.round(((avg - 1) / (scaleMax - 1)) * 100) : 100; }
+    function toPct(avg) { return scaleMax > 1 ? Math.round(((avg - scaleMin) / (scaleMax - 1)) * 100) : 100; }
 
     function computeScores() {
       const dimAverages = dimensions.map(dim => {
         const vals = state.answers[dim.id];
         const sum = vals.reduce((a, b) => a + b, 0);
         const avg = sum / vals.length;
-        return { id: dim.id, label: dim.label, avg, sum, max: vals.length * scaleMax, pct: toPct(avg), dim };
+        return { id: dim.id, label: dim.label, avg, sum, max: vals.length * scaleTop, pct: toPct(avg), level: levelOf(sum), dim };
       });
       const overall = dimAverages.reduce((a, d) => a + d.avg, 0) / dimAverages.length;
       return { dimAverages, overall };
@@ -703,6 +800,13 @@
     function pickPriorities(dimAverages) {
       const cfg = block.priorities;
       if (!cfg) return [];
+      if (sequential) {
+        // La incertidumbre dominante primero: las dimensiones bajo el umbral,
+        // en su orden. Si todas lo alcanzan, la última.
+        const below = dimAverages.filter(d => d.sum < threshold);
+        const list = below.length ? below : [dimAverages[dimAverages.length - 1]];
+        return list.slice(0, Math.max(1, cfg.count || 3));
+      }
       const dir = cfg.order === 'highest' ? -1 : 1;
       return dimAverages.map((d, i) => ({ d, i }))
         .sort((a, b) => (a.d.avg - b.d.avg) * dir || a.i - b.i)
@@ -712,7 +816,7 @@
 
     // Variables que recibe la plantilla de correo (EmailJS) o el webhook.
     function resultParams(dimAverages, overall) {
-      const profile = pickByMax(profiles, overall);
+      const profile = pickByMax(profiles, profileValue(dimAverages, overall));
       const stage = (Array.isArray(block.stages) && block.stages.length) ? pickByMax(block.stages, overall) : null;
       const pri = pickPriorities(dimAverages);
       const cfg = block.priorities || {};
@@ -732,6 +836,8 @@
         params[`dim_${i + 1}_label`] = d.label;
         params[`dim_${i + 1}_pct`] = d.pct;
         params[`dim_${i + 1}_score`] = d.sum;
+        params[`dim_${i + 1}_max`] = d.max;
+        params[`dim_${i + 1}_level`] = d.level;
       });
       pri.forEach((d, i) => {
         const k = `priority_${i + 1}_`;
@@ -850,7 +956,7 @@
         scale.setAttribute('role', 'group');
         scale.setAttribute('aria-label', itemText);
         scaleLabels.forEach((label, i) => {
-          const value = i + 1;
+          const value = i + scaleMin;
           const btn = document.createElement('button');
           btn.type = 'button';
           btn.textContent = label;
@@ -957,7 +1063,9 @@
         state.unlocked = true;
         lsSet('diag_unlocked_' + block.id, true);
         render();
-        const emailed = outcome.configured && outcome.sent.indexOf('emailjs') !== -1;
+        // El correo sale por EmailJS o por un webhook propio que lo envía ("sendsEmail").
+        const hook = leadsConfig().webhook || {};
+        const emailed = outcome.configured && (outcome.sent.indexOf('emailjs') !== -1 || (!!hook.sendsEmail && outcome.sent.indexOf('webhook') !== -1));
         showToast(emailed ? t('diagEmailSent', { email }) : t('diagUnlocked'), emailed ? 5000 : 3200);
       });
       wrap.appendChild(form);
@@ -971,13 +1079,14 @@
     }
 
     function renderFullResults(dimAverages, overall) {
-      const profile = pickByMax(profiles, overall);
+      const profile = pickByMax(profiles, profileValue(dimAverages, overall));
       const stage = (Array.isArray(block.stages) && block.stages.length) ? pickByMax(block.stages, overall) : null;
 
       const profileEl = document.createElement('div');
       profileEl.className = 'diag-profile';
       profileEl.innerHTML = `
         <div class="diag-profile-emoji" aria-hidden="true">${escapeHtml(profile.emoji || '')}</div>
+        ${block.resultLabel ? `<div class="diag-profile-label">${escapeHtml(block.resultLabel)}</div>` : ''}
         <div class="diag-profile-title">${escapeHtml(profile.title || '')}</div>
         <div class="diag-profile-row"><b>${escapeHtml(t('diagStrength'))}</b>${mdInline(profile.strength || '')}</div>
         <div class="diag-profile-row"><b>${escapeHtml(t('diagRisk'))}</b>${mdInline(profile.risk || '')}</div>
@@ -994,7 +1103,7 @@
         const row = document.createElement('div');
         row.className = 'diag-bar-row';
         row.innerHTML = `
-          <div class="diag-bar-head"><span>${escapeHtml(d.label)}</span><span>${pct}%</span></div>
+          <div class="diag-bar-head"><span>${escapeHtml(d.label)}</span><span>${levels.length ? escapeHtml(t('diagPriorityOf', { score: d.sum, max: d.max }) + ' · ' + d.level) : pct + '%'}</span></div>
           <div class="diag-bar-track"><div class="diag-bar-fill" style="width:${Math.max(3, pct)}%"></div></div>
         `;
         barsWrap.appendChild(row);
@@ -1016,7 +1125,7 @@
           const card = document.createElement('div');
           card.className = 'diag-priority';
           card.innerHTML = `
-            <div class="diag-priority-eyebrow">${escapeHtml(cfg.eyebrow || t('diagPriorityEyebrow'))} ${String(i + 1).padStart(2, '0')}</div>
+            <div class="diag-priority-eyebrow">${escapeHtml(cfg.eyebrow || t('diagPriorityEyebrow'))}${pri.length > 1 ? ' ' + String(i + 1).padStart(2, '0') : ''}</div>
             <div class="diag-priority-title">${escapeHtml(d.label)}</div>
             <div class="diag-priority-level"><b>${escapeHtml(cfg.levelLabel || t('diagPriorityLevel'))}:</b> ${escapeHtml(t('diagPriorityOf', { score: d.sum, max: d.max }))}</div>
             ${d.dim.insight ? `<div class="diag-priority-text">${mdInline(d.dim.insight)}</div>` : ''}
@@ -1289,10 +1398,11 @@
     if (!('serviceWorker' in navigator) || !navigator.onLine) return;
     const urls = new Set();
     if (book.meta && book.meta.coverImage) urls.add(book.meta.coverImage);
+    if (book.meta && book.meta.coverImageWide) urls.add(book.meta.coverImageWide);
     chapters.forEach(ch => {
       const hero = normalizeHero(ch.hero);
       if (hero && hero.src) urls.add(hero.src);
-      (ch.blocks || []).forEach(b => { if (b && b.type === 'image' && b.src) urls.add(b.src); });
+      (ch.blocks || []).forEach(b => { if (b && b.type === 'image' && b.src) { urls.add(b.src); if (b.srcWide) urls.add(b.srcWide); } });
     });
     if (!urls.size) return;
     navigator.serviceWorker.ready.then(reg => {

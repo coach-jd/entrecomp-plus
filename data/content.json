@@ -10,7 +10,6 @@
     "lang": "es",
     "coverImage": "images/portada.jpg",
     "coverAspect": "16:9",
-    "coverOverlay": true,
     "coverPosition": "40% 50%",
     "coverImageAlt": "Un coche de resistencia con los faros encendidos sale del carril de boxes hacia la pista al anochecer, mientras el equipo lo observa desde el muro.",
     "readingTimeMinutes": 19,

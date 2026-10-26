@@ -1,5 +1,5 @@
 /* =========================================================
-   EntreComp Plus — hoja de estilos (identidad: 24 Horas de Le Mans)
+   Motor de Libro Web™ — hoja de estilos base
    ---------------------------------------------------------
    Personalización de marca: TODO lo que hace a la identidad
    visual de este libro vive en el bloque :root de acá abajo
@@ -53,39 +53,39 @@
    de abajo y el botón #themeToggle del HTML. */
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg: #12141c;
-    --bg-elevated: #1b1e29;
-    --text: #f1efe9;
-    --text-muted: #b4b7c4;
-    --accent: #e58bbd;
-    --accent-contrast: #12141c;
-    --accent-secondary: #f0a050;
-    --border: #2f3342;
+    --bg: #16161a;
+    --bg-elevated: #1e1e24;
+    --text: #f2f1ec;
+    --text-muted: #b7b6c2;
+    --accent: #6d85e8;
+    --accent-contrast: #101018;
+    --accent-secondary: #d6b673;
+    --border: #33333c;
     --shadow: 0 12px 30px -14px rgba(0,0,0,0.55);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg: #12141c;
-  --bg-elevated: #1b1e29;
-  --text: #f1efe9;
-  --text-muted: #b4b7c4;
-  --accent: #e58bbd;
-  --accent-contrast: #12141c;
-  --accent-secondary: #f0a050;
-  --border: #2f3342;
+  --bg: #16161a;
+  --bg-elevated: #1e1e24;
+  --text: #f2f1ec;
+  --text-muted: #b7b6c2;
+  --accent: #6d85e8;
+  --accent-contrast: #101018;
+  --accent-secondary: #d6b673;
+  --border: #33333c;
   --shadow: 0 12px 30px -14px rgba(0,0,0,0.55);
   color-scheme: dark;
 }
 :root[data-theme="light"]{
-  --bg: #f7f5f0;
+  --bg: #faf9f6;
   --bg-elevated: #ffffff;
-  --text: #161a2e;
-  --text-muted: #4f5468;
-  --accent: #8a2f63;
+  --text: #16161a;
+  --text-muted: #5c5c66;
+  --accent: #3454d1;
   --accent-contrast: #ffffff;
-  --accent-secondary: #1d6672;
-  --border: #e3dfd6;
+  --accent-secondary: #7a5c1e;
+  --border: #e4e2db;
   color-scheme: light;
 }
 
@@ -196,23 +196,6 @@ a.btn{ display: inline-flex; align-items: center; justify-content: center; text-
   background: linear-gradient(to bottom, transparent, var(--bg));
   pointer-events: none;
 }
-/* Portada con título sobre la imagen (meta.coverOverlay: true).
-   La imagen gana altura en celular y el texto va sobre un degradado
-   oscuro fijo, así se lee igual en tema claro y oscuro. */
-.cover-overlay-mode .cover-hero{ aspect-ratio: auto !important; height: min(60vh, 640px); min-height: 380px; }
-.cover-overlay-mode .cover-hero-fade{ display: none; }
-.cover-overlay{
-  position: absolute; left: 0; right: 0; bottom: 0;
-  padding: 5rem var(--gutter) 2.2rem; text-align: center;
-  background: linear-gradient(to top, rgba(10,12,20,.9) 0%, rgba(10,12,20,.6) 55%, rgba(10,12,20,0) 100%);
-}
-.cover-overlay .cover-kicker{ color: #f0a050; }
-.cover-overlay .cover-title{ color: #ffffff; max-width: var(--max-width); margin: 0 auto; text-shadow: 0 2px 18px rgba(0,0,0,.6); }
-.cover-overlay .cover-title .accent-term{ color: #f2a6cf; }
-.cover-overlay-mode .cover-copy{ padding-top: 1.3rem; }
-.cover-overlay-mode .cover-actions{ margin-top: 1.3rem; }
-.cover-overlay-mode .cover-subtitle{ margin-top: 0; }
-
 /* Portada tipo póster (meta.coverMode: "poster"): la imagen ya trae el
    título y el subtítulo, así que se muestra entera, sin recortar, y el
    título en texto se oculta a la vista (sigue ahí para lectores de pantalla). */
@@ -468,6 +451,10 @@ a.btn{ display: inline-flex; align-items: center; justify-content: center; text-
 .diag-gate li{ font-size: 1rem; line-height: 1.45; margin-bottom: .4rem; font-family: var(--font-serif); }
 
 .diag-profile{ text-align: center; padding: 1rem 0 1.6rem; border-bottom: 1px solid var(--border); margin-bottom: 1.6rem; }
+.diag-profile-label{
+  font-family: var(--font-sans); font-size: .78rem; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--accent-secondary); margin-bottom: .3rem;
+}
 .diag-profile-emoji{ font-size: 2.4rem; }
 .diag-profile-title{ font-family: var(--font-display); font-size: 1.4rem; margin: .4rem 0 1rem; }
 .diag-profile-row{ text-align: left; max-width: 46ch; margin: 0 auto .9rem; font-family: var(--font-serif); font-size: 1rem; line-height: 1.55; }
@@ -516,3 +503,15 @@ a.btn{ display: inline-flex; align-items: center; justify-content: center; text-
 @media (min-width: 720px){ :root{ --gutter: 2rem; --reading-size: 1.1875rem; } }
 
 @media (prefers-reduced-motion: reduce){ *{ transition: none !important; } }
+
+/* ---------- Sobre el autor (bloque "author") ---------- */
+.author-block{ font-family: var(--font-sans); margin: 0 0 2rem; }
+.author-photo{ max-width: 220px; margin: 0 auto 1.4rem; }
+.author-photo .image-frame{ border-radius: 50%; }
+.author-photo img{ width: 100%; height: 100%; object-fit: cover; }
+.author-head{ text-align: center; margin-bottom: 1.4rem; }
+.chapter-body .author-name{ font-family: var(--font-display); font-size: 1.6rem; margin: 0; }
+.chapter-body .author-role{ color: var(--accent-secondary); font-size: .95rem; margin: .35rem 0 0; }
+.chapter-body .author-bio{ font-family: var(--font-serif); }
+.author-links{ list-style: none; padding: 0; margin: 1.4rem 0; display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; justify-content: center; }
+.author-links a{ font-size: .95rem; }
